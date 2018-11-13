@@ -3,19 +3,24 @@
 
 
     
-    
   <url>
-    <loc>https://zhaopeng0103.github.io/uncategorized/hello-world/</loc>
-    <lastmod>2018-11-13T10:31:24.645Z</lastmod>
+    <loc>https://zhaopeng0103.github.io/default/hello-world/</loc>
+    <lastmod>2018-11-13T11:29:35.270Z</lastmod>
     <data>
         <display>
         <title>Hello World</title>
         <pubTime>2018-08-02T08:08:43.613Z</pubTime>
         
+        <tag>default</tag>
+         
          
            
+             
+              <breadCrumb title="default" url="https://zhaopeng0103.github.io/categories/default/"/>
+          
         </display>
     </data>
     </url>
 
+    
 </urlset>
