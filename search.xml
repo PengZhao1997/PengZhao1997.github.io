@@ -25,7 +25,7 @@
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2Fdefault%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 快速入门创建一篇新文章1$ hexo new "My New Post" 更多信息请查看： Writing 运行服务1$ hexo server 更多信息请查看： Server 生成静态文件1$ hexo generate 更多信息请查看： Generating 发布到远程站点1$ hexo deploy 更多信息请查看： Deployment 常用命令1234$ hexo clean$ hexo g$ gulp$ hexo d 使用github pages服务搭建博客的好处 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台。]]></content>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 快速入门创建一篇新文章1$ hexo new "My New Post" 更多信息请查看： Writing 运行服务1$ hexo server 更多信息请查看： Server 生成静态文件1$ hexo generate 更多信息请查看： Generating 发布到远程站点1$ hexo deploy 更多信息请查看： Deployment 常用命令1234$ hexo clean$ hexo g$ gulp$ hexo d or 1$ hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo d 使用github pages服务搭建博客的好处 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台。]]></content>
       <categories>
         <category>default</category>
       </categories>
