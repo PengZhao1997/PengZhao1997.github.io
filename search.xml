@@ -8,8 +8,8 @@
         <category>算法题</category>
       </categories>
       <tags>
-        <tag>模拟</tag>
         <tag>程序设计竞赛</tag>
+        <tag>模拟</tag>
       </tags>
   </entry>
   <entry>
@@ -20,8 +20,8 @@
         <category>算法题</category>
       </categories>
       <tags>
-        <tag>程序设计竞赛</tag>
         <tag>动态规划dp</tag>
+        <tag>程序设计竞赛</tag>
       </tags>
   </entry>
   <entry>
@@ -32,8 +32,8 @@
         <category>算法题</category>
       </categories>
       <tags>
-        <tag>模拟</tag>
         <tag>程序设计竞赛</tag>
+        <tag>模拟</tag>
       </tags>
   </entry>
   <entry>
@@ -44,8 +44,8 @@
         <category>算法题</category>
       </categories>
       <tags>
-        <tag>模拟</tag>
         <tag>程序设计竞赛</tag>
+        <tag>模拟</tag>
       </tags>
   </entry>
   <entry>
@@ -65,13 +65,13 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[标签云]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[about]]></title>
+    <url>%2Fabout%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[about]]></title>
-    <url>%2Fabout%2Findex.html</url>
+    <title><![CDATA[标签云]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
