@@ -51,7 +51,7 @@
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2Fdefault%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 快速入门创建一篇新文章$ hexo new &quot;My New Post&quot; 更多信息请查看： Writing 标签插件（Tag Plugins） Markdown语法(GFM)写博客 运行服务$ hexo server 更多信息请查看： Server 生成静态文件$ hexo generate 更多信息请查看： Generating 发布到远程站点$ hexo deploy 更多信息请查看： Deployment 常用命令$ hexo clean $ hexo g $ gulp $ hexo d or $ hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo d 关于图片素材图片素材按官方教程说法，可统一放置在source/images目录中，并以![](/images/image.jpg) 方式引用。或者在_config.yml打开 post_asset_folder 功能，将当前文章所用的图片放置到source目录下的文章同名资源目录下，以![](image.jpg)方式引用 使用 Hexo Admin 插件Hexo Admin是一个本地在线式文章管理器，可以用直观可视化的方式新建、编辑博客文章、page页面，添加标签、分类等，并且支持剪贴板粘贴图片（自动在source_images_目录中创建文件）。 在Hexo网站目录下，安装 Hexo Admin 插件$ npm install --save hexo-admin 启动本地服务器并打开管理界面，即可使用$ hexo server -d $ open http://localhost:4000/admin/ 使用github pages服务搭建博客的好处 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台。]]></content>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 快速入门创建一篇新文章$ hexo new &quot;My New Post&quot; 更多信息请查看： Writing 标签插件（Tag Plugins） Markdown语法(GFM)写博客 HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器 HexoEditor 运行服务$ hexo server 更多信息请查看： Server 生成静态文件$ hexo generate 更多信息请查看： Generating 发布到远程站点$ hexo deploy 更多信息请查看： Deployment 常用命令$ hexo clean $ hexo g $ gulp $ hexo d or $ hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo d 关于图片素材图片素材按官方教程说法，可统一放置在source/images目录中，并以![](/images/image.jpg) 方式引用。或者在_config.yml打开 post_asset_folder 功能，将当前文章所用的图片放置到source目录下的文章同名资源目录下，以![](image.jpg)方式引用 使用 Hexo Admin 插件Hexo Admin是一个本地在线式文章管理器，可以用直观可视化的方式新建、编辑博客文章、page页面，添加标签、分类等，并且支持剪贴板粘贴图片（自动在source_images_目录中创建文件）。 在Hexo网站目录下，安装 Hexo Admin 插件$ npm install --save hexo-admin 启动本地服务器并打开管理界面，即可使用$ hexo server -d $ open http://localhost:4000/admin/ 使用github pages服务搭建博客的好处 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台。]]></content>
       <categories>
         <category>default</category>
       </categories>
@@ -65,13 +65,13 @@
     <content type="text"><![CDATA[关于我 我叫赵鹏 男 石家庄人 现居北京 学生 联系我 Email：424107420@qq.com GitHub：zhaopeng0103 WeChat：zp18713598785 QQ：424107420]]></content>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[标签云]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[标签云]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
