@@ -1,77 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[程序设计竞赛:五子棋]]></title>
-    <url>%2F%E7%AE%97%E6%B3%95%E9%A2%98%2F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E4%BA%94%E5%AD%90%E6%A3%8B%2F</url>
-    <content type="text"><![CDATA[Problem D. 讨厌的数字时间限制 1000 ms内存限制 64 MB 题目描述在一个nxn的棋盘上，有一些黑色的棋子和白色的棋子，如果能找出任意五个同色的棋子连成直线（横着、竖着、斜着都可以），那么该颜色方加1分。求黑色方得分和白色方得分。 输入数据第一行为一个正整数n，代表棋盘的大小。 接下来为一个nxn的矩阵，’#’代表没有棋子，’B’代表黑色棋子，’W’代表白色棋子 n&lt;=20 输出数据两个正整数，分别代表黑色方得分和白色方得分 样例输入6 WBBBBB WBB### W###B# W###B# W###B# W###B# 样例输出1 2 题解直接遍历每一个棋子，如果在下图中的任一个方向连成5个，则对应方加1分。 AC代码#include &lt;iostream&gt; #include &lt;algorithm&gt; #include &lt;cstdio&gt; #include &lt;cstring&gt; #include &lt;cmath&gt; using namespace std; const int maxN = 40; int n; int a[maxN][maxN], b_score, w_score; string s; int i, j; int main() { memset(a, 0, sizeof(a)); cin &gt;&gt; n; for (i = 3; i &lt; n + 3; i++) { cin &gt;&gt; s; for (j = 0; j &lt; s.length(); j++) { if (s[j] == &#39;B&#39;) { a[i][j + 3] = 1; } if (s[j] == &#39;W&#39;) { a[i][j + 3] = 2; } } } for (i = 3; i &lt; n + 3; i++) { for (j = 3; j &lt; n + 3; j++) { if (a[i][j] == 1) { if (a[i][j - 1] == a[i][j] &amp;&amp; a[i][j - 2] == a[i][j] &amp;&amp; a[i][j + 1] == a[i][j] &amp;&amp; a[i][j + 2] == a[i][j]) { b_score++; } if (a[i - 1][j] == a[i][j] &amp;&amp; a[i - 2][j] == a[i][j] &amp;&amp; a[i + 1][j] == a[i][j] &amp;&amp; a[i + 2][j] == a[i][j]) { b_score++; } if (a[i + 1][j + 1] == a[i][j] &amp;&amp; a[i + 2][j + 2] == a[i][j] &amp;&amp; a[i - 1][j - 1] == a[i][j] &amp;&amp; a[i - 2][j - 2] == a[i][j]) { b_score++; } if (a[i + 1][j - 1] == a[i][j] &amp;&amp; a[i + 2][j - 2] == a[i][j] &amp;&amp; a[i - 1][j + 1] == a[i][j] &amp;&amp; a[i - 2][j + 2] == a[i][j]) { b_score++; } } if (a[i][j] == 2) { if (a[i][j - 1] == a[i][j] &amp;&amp; a[i][j - 2] == a[i][j] &amp;&amp; a[i][j + 1] == a[i][j] &amp;&amp; a[i][j + 2] == a[i][j]) { w_score++; } if (a[i - 1][j] == a[i][j] &amp;&amp; a[i - 2][j] == a[i][j] &amp;&amp; a[i + 1][j] == a[i][j] &amp;&amp; a[i + 2][j] == a[i][j]) { w_score++; } if (a[i + 1][j + 1] == a[i][j] &amp;&amp; a[i + 2][j + 2] == a[i][j] &amp;&amp; a[i - 1][j - 1] == a[i][j] &amp;&amp; a[i - 2][j - 2] == a[i][j]) { w_score++; } if (a[i + 1][j - 1] == a[i][j] &amp;&amp; a[i + 2][j - 2] == a[i][j] &amp;&amp; a[i - 1][j + 1] == a[i][j] &amp;&amp; a[i - 2][j + 2] == a[i][j]) { w_score++; } } } } cout &lt;&lt; b_score &lt;&lt; &quot; &quot; &lt;&lt; w_score &lt;&lt; endl; return 0; }]]></content>
+<search> 
+  
+    
+    <entry>
+      <title>程序设计竞赛:五子棋</title>
+      <link href="/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E4%BA%94%E5%AD%90%E6%A3%8B/"/>
+      <url>/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E4%BA%94%E5%AD%90%E6%A3%8B/</url>
+      <content type="html"><![CDATA[<h2 id="Problem-D-讨厌的数字"><a href="#Problem-D-讨厌的数字" class="headerlink" title="Problem D. 讨厌的数字"></a>Problem D. 讨厌的数字</h2><p>时间限制 1000 ms<br>内存限制 64 MB</p><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>在一个nxn的棋盘上，有一些黑色的棋子和白色的棋子，如果能找出任意五个同色的棋子连成直线（横着、竖着、斜着都可以），那么该颜色方加1分。求黑色方得分和白色方得分。</p><h3 id="输入数据"><a href="#输入数据" class="headerlink" title="输入数据"></a>输入数据</h3><p>第一行为一个正整数n，代表棋盘的大小。 接下来为一个nxn的矩阵，’#’代表没有棋子，’B’代表黑色棋子，’W’代表白色棋子 n&lt;=20</p><h3 id="输出数据"><a href="#输出数据" class="headerlink" title="输出数据"></a>输出数据</h3><p>两个正整数，分别代表黑色方得分和白色方得分</p><h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><pre><code class="bash">6WBBBBBWBB###W###B#W###B#W###B#W###B#</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><pre><code class="bash">1 2</code></pre><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>直接遍历每一个棋子，如果在下图中的任一个方向连成5个，则对应方加1分。<br><img src="/images/wuziqi.png" alt=""></p><h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="bash">#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;using namespace std;const int maxN = 40;int n;int a[maxN][maxN], b_score, w_score;string s;int i, j;int main() {    memset(a, 0, sizeof(a));    cin &gt;&gt; n;    for (i = 3; i &lt; n + 3; i++) {        cin &gt;&gt; s;        for (j = 0; j &lt; s.length(); j++) {            if (s[j] == &#39;B&#39;) {                a[i][j + 3] = 1;            }            if (s[j] == &#39;W&#39;) {                a[i][j + 3] = 2;            }        }    }    for (i = 3; i &lt; n + 3; i++) {        for (j = 3; j &lt; n + 3; j++) {            if (a[i][j] == 1) {                if (a[i][j - 1] == a[i][j] &amp;&amp; a[i][j - 2] == a[i][j] &amp;&amp; a[i][j + 1] == a[i][j] &amp;&amp; a[i][j + 2] == a[i][j]) {                    b_score++;                }                if (a[i - 1][j] == a[i][j] &amp;&amp; a[i - 2][j] == a[i][j] &amp;&amp; a[i + 1][j] == a[i][j] &amp;&amp; a[i + 2][j] == a[i][j]) {                    b_score++;                }                if (a[i + 1][j + 1] == a[i][j] &amp;&amp; a[i + 2][j + 2] == a[i][j] &amp;&amp; a[i - 1][j - 1] == a[i][j] &amp;&amp; a[i - 2][j - 2] == a[i][j]) {                    b_score++;                }                if (a[i + 1][j - 1] == a[i][j] &amp;&amp; a[i + 2][j - 2] == a[i][j] &amp;&amp; a[i - 1][j + 1] == a[i][j] &amp;&amp; a[i - 2][j + 2] == a[i][j]) {                    b_score++;                }            }            if (a[i][j] == 2) {                if (a[i][j - 1] == a[i][j] &amp;&amp; a[i][j - 2] == a[i][j] &amp;&amp; a[i][j + 1] == a[i][j] &amp;&amp; a[i][j + 2] == a[i][j]) {                    w_score++;                }                if (a[i - 1][j] == a[i][j] &amp;&amp; a[i - 2][j] == a[i][j] &amp;&amp; a[i + 1][j] == a[i][j] &amp;&amp; a[i + 2][j] == a[i][j]) {                    w_score++;                }                if (a[i + 1][j + 1] == a[i][j] &amp;&amp; a[i + 2][j + 2] == a[i][j] &amp;&amp; a[i - 1][j - 1] == a[i][j] &amp;&amp; a[i - 2][j - 2] == a[i][j]) {                    w_score++;                }                if (a[i + 1][j - 1] == a[i][j] &amp;&amp; a[i + 2][j - 2] == a[i][j] &amp;&amp; a[i - 1][j + 1] == a[i][j] &amp;&amp; a[i - 2][j + 2] == a[i][j]) {                    w_score++;                }            }        }    }    cout &lt;&lt; b_score &lt;&lt; &quot; &quot; &lt;&lt; w_score &lt;&lt; endl;    return 0;}</code></pre>]]></content>
+      
       <categories>
-        <category>算法题</category>
+          
+          <category> 算法题 </category>
+          
       </categories>
-      <tags>
-        <tag>模拟</tag>
-        <tag>程序设计竞赛</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[程序设计竞赛:讨厌的数字]]></title>
-    <url>%2F%E7%AE%97%E6%B3%95%E9%A2%98%2F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E8%AE%A8%E5%8E%8C%E7%9A%84%E6%95%B0%E5%AD%97%2F</url>
-    <content type="text"><![CDATA[Problem D. 讨厌的数字时间限制 1000 ms内存限制 64 MB 题目描述奶牛的生日快到了，你准备送给他一个数x作为生日礼物，x是十进制下的一个n位数，但是奶牛向你提出了一些要求。 1 奶牛准备了一个数字d，他希望x是d的倍数 2 奶牛不喜欢0和3，他不希望x中有0或3 请问有多少个不同的n位数可以作为奶牛的生日礼物呢？ 答案mod1000000007输出。 输入数据两个数字n和d，代表数字位数和奶牛给出的数字d0 &lt;= n &lt;= 10000 &lt;= d &lt;= 1000 输出数据一个1000000007之内的整数代表答案 样例输入2 3 样例输出22 题解dp[i][j]表示i位数中模d等于j的方案数。首先计算只有一位数时，满足条件的方案数作为初始值。然后依次遍历i位数下对d求余为j的方案个数；每增加一位数，就在其最后加k，因为要求数字中不能出现0和3，那么遍历时直接去除这两个数字就可以了。最后n位数下是d的倍数的方案个数就是dp[n][0]。 AC代码#include &lt;iostream&gt; #include &lt;algorithm&gt; #include &lt;cstdio&gt; #include &lt;cstring&gt; #include &lt;cmath&gt; using namespace std; const int maxN = 1010; int n, d, dp[maxN][maxN]; int i, j, k; int main() { cin &gt;&gt; n &gt;&gt; d; // 计算一位数的方案数 for (k = 1; k &lt;= 9; k++) { if (k == 3) { continue; } dp[1][k % d]++; } // dp[i][j]表示i位数中模d等于j的方案数 for (i = 2; i &lt;= n; i++) { for (j = 0; j &lt; d; j++) { for (k = 1; k &lt;= 9; k++) { if (k == 3) { continue; } dp[i][(j * 10 + k) % d] += dp[i - 1][j]; dp[i][(j * 10 + k) % d] %= 1000000007; } } } cout &lt;&lt; dp[n][0] &lt;&lt; endl;// 输出n位数中能被d整除的满足条件的方案数 return 0; }]]></content>
+      
+      
+        <tags>
+            
+            <tag> 模拟 </tag>
+            
+            <tag> 程序设计竞赛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>程序设计竞赛:讨厌的数字</title>
+      <link href="/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E8%AE%A8%E5%8E%8C%E7%9A%84%E6%95%B0%E5%AD%97/"/>
+      <url>/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E8%AE%A8%E5%8E%8C%E7%9A%84%E6%95%B0%E5%AD%97/</url>
+      <content type="html"><![CDATA[<h2 id="Problem-D-讨厌的数字"><a href="#Problem-D-讨厌的数字" class="headerlink" title="Problem D. 讨厌的数字"></a>Problem D. 讨厌的数字</h2><p>时间限制 1000 ms<br>内存限制 64 MB</p><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>奶牛的生日快到了，你准备送给他一个数x作为生日礼物，x是十进制下的一个n位数，但是奶牛向你提出了一些要求。 1 奶牛准备了一个数字d，他希望x是d的倍数 2 奶牛不喜欢0和3，他不希望x中有0或3 请问有多少个不同的n位数可以作为奶牛的生日礼物呢？ 答案mod1000000007输出。</p><h3 id="输入数据"><a href="#输入数据" class="headerlink" title="输入数据"></a>输入数据</h3><p>两个数字n和d，代表数字位数和奶牛给出的数字d<br>0 &lt;= n &lt;= 1000<br>0 &lt;= d &lt;= 1000</p><h3 id="输出数据"><a href="#输出数据" class="headerlink" title="输出数据"></a>输出数据</h3><p>一个1000000007之内的整数代表答案</p><h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><pre><code class="bash">2 3</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><pre><code class="bash">22</code></pre><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p><code>dp[i][j]</code>表示<code>i</code>位数中模<code>d</code>等于<code>j</code>的方案数。首先计算只有一位数时，满足条件的方案数作为初始值。然后依次遍历<code>i</code>位数下对<code>d</code>求余为<code>j</code>的方案个数；每增加一位数，就在其最后加<code>k</code>，因为要求数字中不能出现<code>0</code>和<code>3</code>，那么遍历时直接去除这两个数字就可以了。最后<code>n</code>位数下是<code>d</code>的倍数的方案个数就是<code>dp[n][0]</code>。</p><h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="bash">#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;using namespace std;const int maxN = 1010;int n, d, dp[maxN][maxN];int i, j, k;int main() {    cin &gt;&gt; n &gt;&gt; d;    // 计算一位数的方案数    for (k = 1; k &lt;= 9; k++) {        if (k == 3) {            continue;        }        dp[1][k % d]++;    }    // dp[i][j]表示i位数中模d等于j的方案数    for (i = 2; i &lt;= n; i++) {        for (j = 0; j &lt; d; j++) {            for (k = 1; k &lt;= 9; k++) {                if (k == 3) {                    continue;                }                dp[i][(j * 10 + k) % d] += dp[i - 1][j];                dp[i][(j * 10 + k) % d] %= 1000000007;            }        }    }    cout &lt;&lt; dp[n][0] &lt;&lt; endl;// 输出n位数中能被d整除的满足条件的方案数    return 0;}</code></pre>]]></content>
+      
       <categories>
-        <category>算法题</category>
+          
+          <category> 算法题 </category>
+          
       </categories>
-      <tags>
-        <tag>程序设计竞赛</tag>
-        <tag>动态规划dp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[程序设计竞赛:约瑟夫环plus]]></title>
-    <url>%2F%E7%AE%97%E6%B3%95%E9%A2%98%2F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AFplus%2F</url>
-    <content type="text"><![CDATA[Problem C. 约瑟夫环plus时间限制 2000 ms内存限制 64 MB 题目描述考虑经典的约瑟夫环模型：n个人按顺序围成一圈，从第一个人开始报数，从1开始报，报到k这个数的人会被移出去，然后下一个人从1开始重新报数，第n个人报完数之后第1个人接着报数，问整个过程中第1个人报了几次数。 输入数据两个正整数n，k1 &lt;= n &lt;= 10000000000000000001 &lt;= k &lt;= 200 输出数据第1个人被移除之前一共报了几次数 样例输入4 4 样例输出3 样例说明注意n需要用long long存 题解cur_number存储第一个人每次轮到他时所报的号，最开始时，第一个人报号的次数res为1，cur_number也为1；从上一次这个人报号到下一次轮到他报号为止为一个周期，在这个周期内有(n + cur_number) / k个人被移出去，这个人报的号更新为(n + cur_number) % k；所以当(n + cur_number) % k = 0时，第一个人会被移出去，也就是下一次轮到他时cur_number = 0。 AC代码#include &lt;iostream&gt; #include &lt;algorithm&gt; #include &lt;cstdio&gt; #include &lt;cstring&gt; #include &lt;cmath&gt; using namespace std; long long n, k, cur_number, res, temp; int main() { cin &gt;&gt; n &gt;&gt; k; res = 1; cur_number = 1; while (cur_number != 0) { temp = n + cur_number; n -= temp / k; cur_number = temp % k; res++; } cout &lt;&lt; res &lt;&lt; endl; return 0; }]]></content>
+      
+      
+        <tags>
+            
+            <tag> 程序设计竞赛 </tag>
+            
+            <tag> 动态规划dp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>程序设计竞赛:约瑟夫环plus</title>
+      <link href="/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AFplus/"/>
+      <url>/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AFplus/</url>
+      <content type="html"><![CDATA[<h2 id="Problem-C-约瑟夫环plus"><a href="#Problem-C-约瑟夫环plus" class="headerlink" title="Problem C. 约瑟夫环plus"></a>Problem C. 约瑟夫环plus</h2><p>时间限制 2000 ms<br>内存限制 64 MB</p><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>考虑经典的约瑟夫环模型：n个人按顺序围成一圈，从第一个人开始报数，从1开始报，报到k这个数的人会被移出去，然后下一个人从1开始重新报数，第n个人报完数之后第1个人接着报数，问整个过程中第1个人报了几次数。</p><h3 id="输入数据"><a href="#输入数据" class="headerlink" title="输入数据"></a>输入数据</h3><p>两个正整数n，k<br>1 &lt;= n &lt;= 1000000000000000000<br>1 &lt;= k &lt;= 200</p><h3 id="输出数据"><a href="#输出数据" class="headerlink" title="输出数据"></a>输出数据</h3><p>第1个人被移除之前一共报了几次数</p><h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><pre><code class="bash">4 4</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><pre><code class="bash">3</code></pre><h3 id="样例说明"><a href="#样例说明" class="headerlink" title="样例说明"></a>样例说明</h3><p>注意n需要用long long存</p><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p><code>cur_number</code>存储第一个人每次轮到他时所报的号，最开始时，第一个人报号的次数<code>res</code>为<code>1</code>，<code>cur_number</code>也为<code>1</code>；从上一次这个人报号到下一次轮到他报号为止为一个周期，在这个周期内有<code>(n + cur_number) / k</code>个人被移出去，这个人报的号更新为<code>(n + cur_number) % k</code>；所以当<code>(n + cur_number) % k = 0</code>时，第一个人会被移出去，也就是下一次轮到他时<code>cur_number = 0</code>。</p><h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="bash">#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;using namespace std;long long n, k, cur_number, res, temp;int main() {    cin &gt;&gt; n &gt;&gt; k;    res = 1;    cur_number = 1;    while (cur_number != 0) {        temp = n + cur_number;        n -= temp / k;        cur_number = temp % k;        res++;    }    cout &lt;&lt; res &lt;&lt; endl;    return 0;}</code></pre>]]></content>
+      
       <categories>
-        <category>算法题</category>
+          
+          <category> 算法题 </category>
+          
       </categories>
-      <tags>
-        <tag>模拟</tag>
-        <tag>程序设计竞赛</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[程序设计竞赛:魔法师排队]]></title>
-    <url>%2F%E7%AE%97%E6%B3%95%E9%A2%98%2F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E9%AD%94%E6%B3%95%E5%B8%88%E6%8E%92%E9%98%9F%2F</url>
-    <content type="text"><![CDATA[Problem B. 魔法师排队时间限制 2000 ms内存限制 64 MB 题目描述有n个魔法师在排队买魔法面包，每个魔法师都有自己的魔力值，用一个正整数表示。 魔法师都不喜欢排队，如果任意时刻某个魔法师发现前面的魔法师的魔力值比自己小，那么这个魔法师就会用法术把前面的人传送到异空间。 请输出有多少个魔法师会被传送到异空间。 输入数据第一行为一个正整数n，代表魔法师的人数。 接下来一行位n个正整数，第i个正整数ai代表队伍中第i个魔法师的魔力值。（第1个魔法师在队头，第n个魔法师在队尾）1 &lt;= n &lt;= 10000001 &lt;= ai &lt;= 100000000 输出数据被传送到异空间的魔法师个数 样例输入5 4 5 1 3 2 样例输出2 题解一开始的想法是：找从第一个魔法师到最后一个魔法师中的拥有最大魔力值的魔法师max_index，那么位于它之前的魔法师都将会被传送走，此具有最大魔力值的魔法师会留下来；接着寻找从max_index + 1到最后一个魔法师之间的拥有最大魔力值的魔法师，进行同样的操作，依次循环下去，直到剩下最后一个魔法师为止（最后一个魔法师肯定会留下来）；然而结果却超时了。于是换了种思维方式，既然是位于魔法师前面且比其魔力值小的魔法师会被传送走，那么最后一个魔法师肯定会留下来；直接定义一个存储最大魔力值的变量max_num，初始化为最后一个魔法师的魔力值，从后向前倒序遍历，如果当前魔法师的魔力值比max_num小，那么就把他传送走；否则，更新最大魔力值。 TLE代码#include &lt;iostream&gt; #include &lt;algorithm&gt; #include &lt;cstdio&gt; #include &lt;cstring&gt; #include &lt;cmath&gt; #include &lt;vector&gt; using namespace std; const int maxN = int(1e6 + 10); int n, a[maxN], l, r, max_index, cont; int i; int main() { cin &gt;&gt; n; for (i = 0; i &lt; n; i++) { scanf(&quot;%d&quot;, &amp;a[i]); } l = 0; r = n; while(l &lt; r) { vector&lt;int&gt; v(a + l, a + r); auto max_value = max_element(v.begin(), v.end()); max_index = distance(begin(v), max_value); cont += max_index; l = l + max_index + 1; } cout &lt;&lt; cont &lt;&lt; endl; return 0; } AC代码#include &lt;iostream&gt; #include &lt;algorithm&gt; #include &lt;cstdio&gt; #include &lt;cstring&gt; #include &lt;cmath&gt; #include &lt;vector&gt; using namespace std; const int maxN = int(1e6 + 10); int n, a[maxN], max_num, cont; int i; int main() { cin &gt;&gt; n; for (i = 1; i &lt;= n; i++) { scanf(&quot;%d&quot;, &amp;a[i]); } max_num = a[n]; for (i = n - 1; i &gt; 0; i--) { if (a[i] &lt; max_num) { cont++; } else { max_num = a[i]; } } cout &lt;&lt; cont &lt;&lt; endl; return 0; }]]></content>
+      
+      
+        <tags>
+            
+            <tag> 模拟 </tag>
+            
+            <tag> 程序设计竞赛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>程序设计竞赛:魔法师排队</title>
+      <link href="/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E9%AD%94%E6%B3%95%E5%B8%88%E6%8E%92%E9%98%9F/"/>
+      <url>/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E9%AD%94%E6%B3%95%E5%B8%88%E6%8E%92%E9%98%9F/</url>
+      <content type="html"><![CDATA[<h2 id="Problem-B-魔法师排队"><a href="#Problem-B-魔法师排队" class="headerlink" title="Problem B. 魔法师排队"></a>Problem B. 魔法师排队</h2><p>时间限制 2000 ms<br>内存限制 64 MB</p><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>有n个魔法师在排队买魔法面包，每个魔法师都有自己的魔力值，用一个正整数表示。 魔法师都不喜欢排队，如果任意时刻某个魔法师发现前面的魔法师的魔力值比自己小，那么这个魔法师就会用法术把前面的人传送到异空间。 请输出有多少个魔法师会被传送到异空间。</p><h3 id="输入数据"><a href="#输入数据" class="headerlink" title="输入数据"></a>输入数据</h3><p>第一行为一个正整数n，代表魔法师的人数。 接下来一行位n个正整数，第i个正整数ai代表队伍中第i个魔法师的魔力值。（第1个魔法师在队头，第n个魔法师在队尾）<br>1 &lt;= n &lt;= 1000000<br>1 &lt;= ai &lt;= 100000000</p><h3 id="输出数据"><a href="#输出数据" class="headerlink" title="输出数据"></a>输出数据</h3><p>被传送到异空间的魔法师个数</p><h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><pre><code class="bash">54 5 1 3 2</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><pre><code class="bash">2</code></pre><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>一开始的想法是：找从第一个魔法师到最后一个魔法师中的拥有最大魔力值的魔法师<code>max_index</code>，那么位于它之前的魔法师都将会被传送走，此具有最大魔力值的魔法师会留下来；接着寻找从<code>max_index + 1</code>到最后一个魔法师之间的拥有最大魔力值的魔法师，进行同样的操作，依次循环下去，直到剩下最后一个魔法师为止（最后一个魔法师肯定会留下来）；然而结果却超时了。于是换了种思维方式，既然是位于魔法师前面且比其魔力值小的魔法师会被传送走，那么最后一个魔法师肯定会留下来；直接定义一个存储最大魔力值的变量<code>max_num</code>，初始化为最后一个魔法师的魔力值，从后向前倒序遍历，如果当前魔法师的魔力值比<code>max_num</code>小，那么就把他传送走；否则，更新最大魔力值。</p><h3 id="TLE代码"><a href="#TLE代码" class="headerlink" title="TLE代码"></a>TLE代码</h3><pre><code class="bash">#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;#include &lt;vector&gt;using namespace std;const int maxN = int(1e6 + 10);int n, a[maxN], l, r, max_index, cont;int i;int main() {    cin &gt;&gt; n;    for (i = 0; i &lt; n; i++) {        scanf(&quot;%d&quot;, &amp;a[i]);    }    l = 0; r = n;    while(l &lt; r) {        vector&lt;int&gt; v(a + l, a + r);        auto max_value = max_element(v.begin(), v.end());        max_index = distance(begin(v), max_value);        cont += max_index;        l = l + max_index + 1;    }    cout &lt;&lt; cont &lt;&lt; endl;    return 0;}</code></pre><h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="bash">#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;#include &lt;vector&gt;using namespace std;const int maxN = int(1e6 + 10);int n, a[maxN], max_num, cont;int i;int main() {    cin &gt;&gt; n;    for (i = 1; i &lt;= n; i++) {        scanf(&quot;%d&quot;, &amp;a[i]);    }    max_num = a[n];    for (i = n - 1; i &gt; 0; i--) {        if (a[i] &lt; max_num) {            cont++;        } else {            max_num = a[i];        }    }    cout &lt;&lt; cont &lt;&lt; endl;    return 0;}</code></pre>]]></content>
+      
       <categories>
-        <category>算法题</category>
+          
+          <category> 算法题 </category>
+          
       </categories>
-      <tags>
-        <tag>模拟</tag>
-        <tag>程序设计竞赛</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2Fdefault%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 快速入门创建一篇新文章$ hexo new &quot;My New Post&quot; 更多信息请查看： Writing 标签插件（Tag Plugins） Markdown语法(GFM)写博客 HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器 HexoEditor 运行服务$ hexo server 更多信息请查看： Server 生成静态文件$ hexo generate 更多信息请查看： Generating 发布到远程站点$ hexo deploy 更多信息请查看： Deployment 常用命令$ hexo clean $ hexo g $ gulp $ hexo d or $ hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo d 关于图片素材图片素材按官方教程说法，可统一放置在source/images目录中，并以![](/images/image.jpg) 方式引用。或者在_config.yml打开 post_asset_folder 功能，将当前文章所用的图片放置到source目录下的文章同名资源目录下，以![](image.jpg)方式引用 使用 Hexo Admin 插件Hexo Admin是一个本地在线式文章管理器，可以用直观可视化的方式新建、编辑博客文章、page页面，添加标签、分类等，并且支持剪贴板粘贴图片（自动在source_images_目录中创建文件）。 在Hexo网站目录下，安装 Hexo Admin 插件$ npm install --save hexo-admin 启动本地服务器并打开管理界面，即可使用$ hexo server -d $ open http://localhost:4000/admin/ 使用github pages服务搭建博客的好处 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 模拟 </tag>
+            
+            <tag> 程序设计竞赛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/default/hello-world/"/>
+      <url>/default/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h2><h3 id="创建一篇新文章"><a href="#创建一篇新文章" class="headerlink" title="创建一篇新文章"></a>创建一篇新文章</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>更多信息请查看： </p><ul><li><a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">Writing</a> </li><li><a href="https://hexo.io/zh-cn/docs/tag-plugins" target="_blank" rel="noopener">标签插件（Tag Plugins）</a></li><li><a href="https://blog.csdn.net/zhuzhuyule/article/details/58347687" target="_blank" rel="noopener">Markdown语法(GFM)写博客</a></li><li><a href="http://www.cnblogs.com/youngwilliam/articles/youngwilliam.html" target="_blank" rel="noopener">HexoEditor, 一个写 Hexo 非常好用的 Markdown 编辑器</a></li><li><a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">HexoEditor</a></li></ul><h3 id="运行服务"><a href="#运行服务" class="headerlink" title="运行服务"></a>运行服务</h3><pre><code class="bash">$ hexo server</code></pre><p>更多信息请查看： <a href="https://hexo.io/zh-cn/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><pre><code class="bash">$ hexo generate</code></pre><p>更多信息请查看： <a href="https://hexo.io/zh-cn/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="发布到远程站点"><a href="#发布到远程站点" class="headerlink" title="发布到远程站点"></a>发布到远程站点</h3><pre><code class="bash">$ hexo deploy</code></pre><p>更多信息请查看： <a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><pre><code class="bash">$ hexo clean$ hexo g$ gulp$ hexo d</code></pre><p>or</p><pre><code class="bash">$ hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo d</code></pre><h3 id="关于图片素材"><a href="#关于图片素材" class="headerlink" title="关于图片素材"></a>关于图片素材</h3><p>图片素材按官方教程说法，可统一放置在source/images目录中，并以<code>![](/images/image.jpg)</code> 方式引用。或者在<code>_config.yml</code>打开 post_asset_folder 功能，将当前文章所用的图片放置到source目录下的文章同名资源目录下，以<code>![](image.jpg)</code>方式引用</p><h3 id="使用-Hexo-Admin-插件"><a href="#使用-Hexo-Admin-插件" class="headerlink" title="使用 Hexo Admin 插件"></a>使用 Hexo Admin 插件</h3><p>Hexo Admin是一个本地在线式文章管理器，可以用直观可视化的方式新建、编辑博客文章、page页面，添加标签、分类等，并且支持剪贴板粘贴图片（自动在source_images_目录中创建文件）。<br><img src="/images/hexoadmin.png" alt=""></p><ul><li>在Hexo网站目录下，安装 Hexo Admin 插件<pre><code class="bash">$ npm install --save hexo-admin</code></pre></li><li>启动本地服务器并打开管理界面，即可使用<pre><code class="bash">$ hexo server -d$ open http://localhost:4000/admin/</code></pre></li></ul><h3 id="使用github-pages服务搭建博客的好处"><a href="#使用github-pages服务搭建博客的好处" class="headerlink" title="使用github pages服务搭建博客的好处"></a>使用github pages服务搭建博客的好处</h3><ol><li>全是静态文件，访问速度快；</li><li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li><li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li><li>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</li><li>博客内容可以轻松打包、转移、发布到其它平台。</li></ol>]]></content>
+      
       <categories>
-        <category>default</category>
+          
+          <category> default </category>
+          
       </categories>
-      <tags>
-        <tag>default</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[标签云]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[关于我]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[关于我 我叫赵鹏 男 石家庄人 现居北京 学生 联系我 Email：424107420@qq.com GitHub：zhaopeng0103 WeChat：zp18713598785 QQ：424107420]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> default </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><ul><li>我叫赵鹏</li><li>男</li><li>石家庄人</li><li>现居北京</li><li>学生</li></ul><h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul><li>Email：<a href="mailto:424107420@qq.com" target="_blank" rel="noopener">424107420@qq.com</a></li><li>GitHub：zhaopeng0103</li><li>WeChat：zp18713598785</li><li>QQ：424107420</li></ul>]]></content>
+    </entry>
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>标签云</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+  
 </search>
