@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/music/%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2/</loc>
-    <lastmod>2018-11-24T11:10:06.684Z</lastmod>
+    <lastmod>2018-11-24T11:12:11.653Z</lastmod>
     <data>
         <display>
         <title>好听的歌曲</title>
@@ -23,33 +23,9 @@
     </url>
 
     
-    
-    
-  <url>
-    <loc>https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E9%AD%94%E6%B3%95%E5%B8%88%E6%8E%92%E9%98%9F/</loc>
-    <lastmod>2018-11-24T09:35:00.571Z</lastmod>
-    <data>
-        <display>
-        <title>程序设计竞赛:魔法师排队</title>
-        <pubTime>2018-11-15T10:37:03.000Z</pubTime>
-        
-        <tag>模拟</tag>
-         
-        <tag>程序设计竞赛</tag>
-         
-         
-           
-             
-              <breadCrumb title="算法题" url="https://zhaopeng0103.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E8%AE%A8%E5%8E%8C%E7%9A%84%E6%95%B0%E5%AD%97/</loc>
-    <lastmod>2018-11-24T09:34:37.195Z</lastmod>
+    <lastmod>2018-11-24T11:12:04.481Z</lastmod>
     <data>
         <display>
         <title>程序设计竞赛:讨厌的数字</title>
@@ -71,7 +47,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E4%BA%94%E5%AD%90%E6%A3%8B/</loc>
-    <lastmod>2018-11-24T09:33:03.973Z</lastmod>
+    <lastmod>2018-11-24T11:11:58.287Z</lastmod>
     <data>
         <display>
         <title>程序设计竞赛:五子棋</title>
@@ -92,6 +68,50 @@
 
     
   <url>
+    <loc>https://zhaopeng0103.github.io/%E5%B7%A5%E5%85%B7/Git%E5%9F%BA%E6%9C%AC%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2018-11-24T11:11:47.867Z</lastmod>
+    <data>
+        <display>
+        <title>Git基本常用命令</title>
+        <pubTime>2018-11-24T06:59:22.000Z</pubTime>
+        
+        <tag>git使用</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://zhaopeng0103.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E9%AD%94%E6%B3%95%E5%B8%88%E6%8E%92%E9%98%9F/</loc>
+    <lastmod>2018-11-24T11:11:23.520Z</lastmod>
+    <data>
+        <display>
+        <title>程序设计竞赛:魔法师排队</title>
+        <pubTime>2018-11-15T10:37:03.000Z</pubTime>
+        
+        <tag>模拟</tag>
+         
+        <tag>程序设计竞赛</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法题" url="https://zhaopeng0103.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
     <loc>https://zhaopeng0103.github.io/default/hello-world/</loc>
     <lastmod>2018-11-24T09:20:29.455Z</lastmod>
     <data>
@@ -105,26 +125,6 @@
            
              
               <breadCrumb title="default" url="https://zhaopeng0103.github.io/categories/default/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhaopeng0103.github.io/%E5%B7%A5%E5%85%B7/Git%E5%9F%BA%E6%9C%AC%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2018-11-24T09:20:22.048Z</lastmod>
-    <data>
-        <display>
-        <title>Git基本常用命令</title>
-        <pubTime>2018-11-24T06:59:22.000Z</pubTime>
-        
-        <tag>git使用</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="https://zhaopeng0103.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
