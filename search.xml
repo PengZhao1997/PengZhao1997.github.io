@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"海草舞","author":"萧全","url":"http://og9ocpmwk.bkt.clouddn.com/%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF.mp3","pic":"https://ogd99kckh.qnssl.com/1.jpg","lrc":"http://og9ocpmwk.bkt.clouddn.com/%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF.txt"}]}; options.element = document.getElementById("aplayer-ebrCHJvm"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"海草舞","author":"萧全","url":"http://og9ocpmwk.bkt.clouddn.com/%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF.mp3","pic":"https://ogd99kckh.qnssl.com/1.jpg","lrc":"http://og9ocpmwk.bkt.clouddn.com/%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF.txt"}]}; options.element = document.getElementById("aplayer-ARnapeRF"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>
@@ -44,6 +44,18 @@
       <tags>
         <tag>程序设计竞赛</tag>
         <tag>动态规划dp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[程序设计竞赛:约瑟夫环plus]]></title>
+    <url>%2F%E7%AE%97%E6%B3%95%E9%A2%98%2F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AFplus%2F</url>
+    <content type="text"><![CDATA[Problem C. 约瑟夫环plus时间限制 2000 ms内存限制 64 MB 题目描述考虑经典的约瑟夫环模型：n个人按顺序围成一圈，从第一个人开始报数，从1开始报，报到k这个数的人会被移出去，然后下一个人从1开始重新报数，第n个人报完数之后第1个人接着报数，问整个过程中第1个人报了几次数。 输入数据两个正整数n，k1 &lt;= n &lt;= 10000000000000000001 &lt;= k &lt;= 200 输出数据第1个人被移除之前一共报了几次数 样例输入14 4 样例输出13 样例说明注意n需要用long long存 题解cur_number存储第一个人每次轮到他时所报的号，最开始时，第一个人报号的次数res为1，cur_number也为1；从上一次这个人报号到下一次轮到他报号为止为一个周期，在这个周期内有(n + cur_number) / k个人被移出去，这个人报的号更新为(n + cur_number) % k；所以当(n + cur_number) % k = 0时，第一个人会被移出去，也就是下一次轮到他时cur_number = 0。 AC代码1234567891011121314151617181920212223#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;using namespace std;long long n, k, cur_number, res, temp;int main() &#123; cin &gt;&gt; n &gt;&gt; k; res = 1; cur_number = 1; while (cur_number != 0) &#123; temp = n + cur_number; n -= temp / k; cur_number = temp % k; res++; &#125; cout &lt;&lt; res &lt;&lt; endl; return 0;&#125;]]></content>
+      <categories>
+        <category>算法题</category>
+      </categories>
+      <tags>
+        <tag>模拟</tag>
+        <tag>程序设计竞赛</tag>
       </tags>
   </entry>
   <entry>
