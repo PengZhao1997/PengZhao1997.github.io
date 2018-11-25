@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[非极大值抑制NMS(Non-Maximum Suppression)]]></title>
+    <url>%2F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D%2F%E9%9D%9E%E6%9E%81%E5%A4%A7%E5%80%BC%E6%8A%91%E5%88%B6NMS-Non-Maximum-Suppression%2F</url>
+    <content type="text"><![CDATA[介绍NMS顾名思义就是抑制不是极大值的元素，可以理解为局部最大搜索。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。在目标检测中NMS主要用于提取分数最高的候选框。例如在用训练好的模型进行测试时，网络会预测出一系列的候选框，这时候可以用NMS来移除一些多余的候选框，即移除一些IOU值大于某个阈值的框。再比如在行人检测中，滑动窗口经提取特征，经分类器分类识别后，每个窗口都会得到一个分数。但是滑动窗口会导致很多窗口与其他窗口存在包含或者大部分交叉的情况。这时就需要用NMS来选取那些邻域里分数最高（是行人的概率最大）的窗口，并且抑制那些分数低的窗口。NMS在计算机视觉领域有着非常重要的应用，如视频目标跟踪、数据挖掘、3D重建、目标识别以及纹理分析等等。 NMS在目标检测中的应用去除重叠人脸检测框的例子如上图所示，目的就是要去除冗余的检测框，找到最佳的候选框。 目标检测pipline中的例子如上图所示，产生proposal后使用分类网络给出每个框的每类置信度，使用回归网络修正位置，最后使用NMS去除冗余的检测框。 NMS算法原理对于bounding boxes列表B及其相应的置信度S，使用下述计算方式：选择具有最大score的检测框M，将其从B集合中移除并加入到最后的检测结果R中。通常将B中剩余检测框与M的IOU大于阈值threshold的框从B中移除。重复这个过程，直到B为空。其中用到的排序，可以按照检测框右下角的坐标或者面积排序，也可以通过SVM等分类器得到的得分或概率进行排序，R-CNN中就是按照得分进行的排序。比如上图，定位一个车辆的位置，算法找出了许多检测框，这时需要判断哪些矩形框是没用的。非极大值抑制的方法是：先假设有6个矩形框，按照候选框的类别分类概率排序，假设属于车辆的概率排序结果为A &lt; B &lt; C &lt; D &lt; E &lt; F。 先从最大概率矩形框F开始，分别判断A~E与F的IOU值是否大于某个设定的阈值； 假设B、D与F的重叠度超过设定的阈值，那么就移除B和D；并标记第一个矩形框F，是保留下来的。 从剩下的矩形框A、C、E中，选择概率最大的E，然后判断E与A、C的重叠度，如果重叠度大于设定的阈值，那么就扔掉；并标记E是保留下来的第二个矩形框。 就这样一直重复，直到找到所有被保留下来的矩形框。 Python源码实现12345678910111213141516171819202122232425262728293031323334353637def py_cpu_nms(dets, thresh): """ Pure Python NMS baseline. """ # x1、y1、x2、y2、以及score赋值 x1 = dets[:, 0] y1 = dets[:, 1] x2 = dets[:, 2] y2 = dets[:, 3] scores = dets[:, 4] # 每一个候选框的面积 areas = (x2 - x1 + 1) * (y2 - y1 + 1) # 按照score置信度降序排序 order = scores.argsort()[::-1] keep = [] # 保留的结果框集合 while order.size &gt; 0: i = order[0] keep.append(i) # 保留该类剩余box中得分最高的一个 # 计算当前概率最大矩形框与其他矩形框的相交框的坐标 xx1 = np.maximum(x1[i], x1[order[1:]]) yy1 = np.maximum(y1[i], y1[order[1:]]) xx2 = np.minimum(x2[i], x2[order[1:]]) yy2 = np.minimum(y2[i], y2[order[1:]]) # 计算相交的面积，不重叠时面积为0 w = np.maximum(0.0, xx2 - xx1 + 1) h = np.maximum(0.0, yy2 - yy1 + 1) inter = w * h #计算IoU：重叠面积 /（面积1+面积2-重叠面积） over = inter / (areas[i] + areas[order[1:]] - inter) # 保留IoU小于阈值的矩形框索引 inds = np.where(over &lt;= thresh)[0] # 将order序列更新，由于前面得到的矩形框索引要比矩形框在原order序列中的索引小1，所以要把这个1加回来 order = order[inds + 1] return keep # 获取保留下来的索引]]></content>
+      <categories>
+        <category>目标检测与定位</category>
+      </categories>
+      <tags>
+        <tag>NMS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[交并比IOU(Intersection over Union)]]></title>
+    <url>%2F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D%2F%E4%BA%A4%E5%B9%B6%E6%AF%94IOU-Intersection-over-Union%2F</url>
+    <content type="text"><![CDATA[基本原理IOU是在目标检测中使用的一个概念，是产生的预测框(Predicted bounding box)与标注框(Ground-truth bounding box)的重叠率；简单来说，即两个矩形框面积的交集和并集的比值；它是一个在特定数据集中检测相应物体准确度的测量标准。通常会在HOG + Linear SVM object detectors和Convolutional Neural Network detectors (R-CNN, Faster R-CNN, YOLO 等)中使用该方法检测其性能。IOU是一个简单的测量标准，在输出中得出一个预测范围(bounding box)的任务都可以用IOU来测量。其用于测量真实和预测之间的相关度，相关度越高，该值越高。上图展示了ground-truth和predicted的结果，绿色标线是人为标记的正确结果，红色标线是算法预测出来的结果，IOU要做的就是在这两个结果中测量算法的准确度。一般来说，这个比值 ＞ 0.5 就可以认为是一个不错的结果了。 Python源码实现123456789101112131415161718192021222324252627282930313233import numpy as npdef compute_iou(box1, box2, wh=False): """ compute the iou of two boxes. args: box1, box2: [xmin, ymin, xmax, ymax] (wh=False) or [xcenter, ycenter, w, h] (wh=True) wh: the format of coordinate. return: iou: iou of box1 and box2. """ if wh == False: xmin1, ymin1, xmax1, ymax1 = box1 xmin2, ymin2, xmax2, ymax2 = box2 else: xmin1, ymin1 = int(box1[0] - box1[2] / 2.0), int(box1[1] - box1[3] / 2.0) xmax1, ymax1 = int(box1[0] + box1[2] / 2.0), int(box1[1] + box1[3] / 2.0) xmin2, ymin2 = int(box2[0] - box2[2] / 2.0), int(box2[1] - box2[3] / 2.0) xmax2, ymax2 = int(box2[0] + box2[2] / 2.0), int(box2[1] + box2[3] / 2.0) ## 计算两个矩形框面积 area1 = (xmax1 - xmin1) * (ymax1 - ymin1) area2 = (xmax2 - xmin2) * (ymax2 - ymin2) ## 获取矩形框交集对应的左上角和右下角的坐标（intersection） inter_x1 = np.max([xmin1, xmin2]) inter_y1 = np.max([ymin1, ymin2]) inter_x2 = np.min([xmax1, xmax2]) inter_y2 = np.min([ymax1, ymax2]) inter_area = (np.max([0, inter_x2 - inter_x1])) * (np.max([0, inter_y2 - inter_y1])) # 计算交集面积 iou = inter_area / (area1 + area2 - inter_area + 1e-6) ＃ 计算交并比 return iou]]></content>
+      <categories>
+        <category>目标检测与定位</category>
+      </categories>
+      <tags>
+        <tag>IOU</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Git基本常用命令]]></title>
     <url>%2F%E5%B7%A5%E5%85%B7%2FGit%E5%9F%BA%E6%9C%AC%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[git init 把当前的目录变成可以管理的git仓库，生成隐藏.git文件。 git add XX 把xx文件添加到暂存区去。 git commit -m ‘XX’ 提交文件， –m 后面的是注释。 git status 查看本地仓库状态。 git diff XX 查看XX文件修改了那些内容。 git log 查看历史记录。 git reset -hard HEAD^ 或者 git reset –hard HEAD~ 回退到上一个版本(如果想回退到100个版本，使用git reset –hard HEAD~100 )。 cat XX 查看XX文件内容。 git reflog 查看历史记录的版本号id。 git checkout – XX 把XX文件在工作区的修改全部撤销。 git rm XX 删除XX文件。 git remote add origin https://github.com/zhaopeng0103/test.git 关联一个远程库。 git push –u(第一次要用-u 以后不需要) origin master 把当前master分支推送到远程库。 git clone https://github.com/zhaopeng0103/test.git 从远程库中克隆。 git checkout –b dev 创建dev分支，并切换到dev分支上。 git branch 查看当前所有的分支。 git checkout master 切换回master分支。 git merge dev 在当前的分支上合并dev分支。 git branch –d dev 删除dev分支。 git branch name 创建分支。 git stash 把当前的工作隐藏起来 等以后恢复现场后继续工作。 git stash list 查看所有被隐藏的文件列表。 git stash apply 恢复被隐藏的文件，但是内容不删除。 git stash drop 删除文件。 git stash pop 恢复文件的同时 也删除文件。 git remote 查看远程库的信息。 git remote –v 查看远程库的详细信息。 git push origin master Git会把master分支推送到远程库对应的远程分支上。]]></content>
@@ -14,7 +36,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-OwsQzXOk"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-ePBLPhSP"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
