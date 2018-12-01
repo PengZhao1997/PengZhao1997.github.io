@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2018-11-25T14:28:31.263Z</updated>
+  <updated>2018-12-01T18:29:21.598Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最大稳定极值区域MSER-Maximally Stable Extrernal Regions</title>
+    <link href="https://zhaopeng0103.github.io/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/%E6%9C%80%E5%A4%A7%E7%A8%B3%E5%AE%9A%E6%9E%81%E5%80%BC%E5%8C%BA%E5%9F%9FMSER-Maximally-Stable-Extrernal-Regions/"/>
+    <id>https://zhaopeng0103.github.io/目标检测与定位/最大稳定极值区域MSER-Maximally-Stable-Extrernal-Regions/</id>
+    <published>2018-12-01T17:30:47.000Z</published>
+    <updated>2018-12-01T18:29:21.598Z</updated>
+    
+    <summary type="html">
+    
+      MSER（Maximally Stable Extrernal Regions）是区域检测中影响最大的算法。
+    
+    </summary>
+    
+      <category term="目标检测与定位" scheme="https://zhaopeng0103.github.io/categories/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/"/>
+    
+    
+      <category term="MSER" scheme="https://zhaopeng0103.github.io/tags/MSER/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>贪心算法_最小差距</title>
+    <link href="https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E6%9C%80%E5%B0%8F%E5%B7%AE%E8%B7%9D/"/>
+    <id>https://zhaopeng0103.github.io/算法题/贪心算法-最小差距/</id>
+    <published>2018-12-01T17:29:01.000Z</published>
+    <updated>2018-12-01T18:27:14.205Z</updated>
+    
+    <summary type="html">
+    
+      给定一些不同的一位数字，你可以从这些数字中选择若干个，并将它们按一定顺序排列，组成一个整数，把剩下的数字按一定顺序排列，组成另一个整数。组成的整数不能以0开头（除非这个整数只有1位）。例如，给定6个数字，0,1,2,4,6,7，你可以用它们组成一对数10和2467，当然，还可以组成其他的很多对数，比如210和764，204和176。这些对数中两个数差的绝对值最小的是204和176，为28。给定N个不同的0-9之间的数字，请你求出用这些数字组成的每对数中，差的绝对值最小的一对（或多对）数的绝对值是多少？
+    
+    </summary>
+    
+      <category term="算法题" scheme="https://zhaopeng0103.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+      <category term="贪心" scheme="https://zhaopeng0103.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>贪心算法_旅行</title>
+    <link href="https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E6%97%85%E8%A1%8C/"/>
+    <id>https://zhaopeng0103.github.io/算法题/贪心算法-旅行/</id>
+    <published>2018-12-01T17:26:40.000Z</published>
+    <updated>2018-12-01T18:04:11.616Z</updated>
+    
+    <summary type="html">
+    
+      某趟列车的最大载客容量为V人，沿途共有n个停靠站，其中始发站为第1站，终点站为第n站。在第1站至第n-1站之间，共有m个团队申请购票搭乘，若规定：（1）对于某个团队的购票申请，要么全部满足，要么全部拒绝，即不允许只满足部分。（2）每个乘客的搭乘费用为其所乘站数。问：应如何选择这些购票申请，能使该趟列车获得最大的搭乘费用？
+    
+    </summary>
+    
+      <category term="算法题" scheme="https://zhaopeng0103.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+      <category term="贪心" scheme="https://zhaopeng0103.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
   
   <entry>
     <title>非极大值抑制NMS(Non-Maximum Suppression)</title>
