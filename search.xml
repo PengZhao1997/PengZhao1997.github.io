@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[贪心算法-合并果子]]></title>
+    <url>%2F%E7%AE%97%E6%B3%95%E9%A2%98%2F%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E5%90%88%E5%B9%B6%E6%9E%9C%E5%AD%90%2F</url>
+    <content type="text"><![CDATA[Problem B. 合并果子时间限制 1000 ms内存限制 128 MB 题目描述在一个果园里，多多已经将所有的果子打了下来，而且按果子的不同种类分成了不同的堆。多多决定把所有的果子合成一堆。每一次合并，多多可以把两堆果子合并到一起，消耗的体力等于两堆果子的重量之和。可以看出，所有的果子经过n-1次合并之后，就只剩下一堆了。多多在合并果子时总共消耗的体力等于每次合并所耗体力之和。因为还要花大力气把这些果子搬回家，所以多多在合并果子时要尽可能地节省体力。假定每个果子重量都为1，并且已知果子的种类数和每种果子的数目，你的任务是设计出合并的次序方案，使多多耗费的体力最少，并输出这个最小的体力耗费值。例如有3种果子，数目依次为1，2，9。可以先将1、2堆合并，新堆数目为3，耗费体力为3。接着，将新堆与原先的第三堆合并，又得到新的堆，数目为12，耗费体力为12。所以多多总共耗费体力=3+12=15。可以证明15为最小的体力耗费值。 输入数据输入包括两行，第一行是一个整数n(1 &lt;＝ n &lt; 10^4)，表示果子的种类数。第二行包含 n 个整数，用空格分隔，第 i 个整数ai(1 &lt;＝ ai &lt; 2 * 10^4)是第 i 种果子的数目。 输出数据输出包括一行，这一行只包含一个整数，也就是最小的体力耗费值。输入数据保证这个值小于 2^31 。 样例输入1231 2 9 样例输出115 题解这道题类似于哈夫曼编码树。首先用一个优先队列存储每种果子的数目，定义比较函数为从大到小排序。然后从队列中取出数目最少的两种果子，合并到一起，并将合并后的结果重新放入优先队列中，同时体力耗费增加相应的值。依此类推，直到将所有种类的果子合并成一堆。这样所得到的体力耗费值是最小的。 AC代码123456789101112131415161718192021222324252627282930#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;queue&gt;using namespace std;long long int n, a, temp, result;priority_queue&lt;long long int, vector&lt;long long int&gt;, greater&lt;long long int&gt;&gt; fruits;int i;int main() &#123; cin &gt;&gt; n; for (i = 0; i &lt; n; i++) &#123; cin &gt;&gt; a; fruits.push(a); &#125; while (fruits.size() &gt; 1) &#123; temp = 0; for (i = 0; i &lt; 2; i++) &#123; temp += fruits.top(); fruits.pop(); &#125; fruits.push(temp); result += temp; &#125; cout &lt;&lt; result &lt;&lt; endl; return 0;&#125;]]></content>
+      <categories>
+        <category>算法题</category>
+      </categories>
+      <tags>
+        <tag>贪心</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[最大稳定极值区域MSER-Maximally Stable Extrernal Regions]]></title>
     <url>%2F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D%2F%E6%9C%80%E5%A4%A7%E7%A8%B3%E5%AE%9A%E6%9E%81%E5%80%BC%E5%8C%BA%E5%9F%9FMSER-Maximally-Stable-Extrernal-Regions%2F</url>
     <content type="text"><![CDATA[基本原理MSER基于分水岭的概念：对图像进行二值化，二值化阈值取[0, 255]，这样二值化图像就经历一个从全黑到全白的过程（就像水位不断上升的俯瞰图）。在这个过程中，有些连通区域面积随阈值上升的变化很小，这种区域就叫MSER。其中Qi表示第i个连通区域的面积，Δ表示微小的阈值变化（注水），当vi小于给定阈值时认为该区域为MSER。显然，这样检测得到的MSER内部灰度值是小于边界的，想象一副黑色背景白色区域的图片，显然这个区域是检测不到的。因此对原图进行一次MSER检测后需要将其反转，再做一次MSER检测，两次操作又称MSER+和MSER-。 Python源码实现1234567891011121314import cv2import matplotlib.pyplot as pltim = cv2.imread('./source.jpg')gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)mser = cv2.MSER_create(_min_area=300)regions, boxes = mser.detectRegions(gray)for box in boxes: x, y, w, h = box cv2.rectangle(im, (x, y),(x + w, y + h), (255, 0, 0), 2)cv2.imwrite("./mser.jpg", im)]]></content>
@@ -69,7 +80,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-jfbzvjDt"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-TtlaTNLw"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
@@ -137,14 +148,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[关于我]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[关于我 我叫赵鹏 男 石家庄人 现居北京 学生 联系我 Email：424107420@qq.com GitHub：zhaopeng0103 WeChat：zp18713598785 QQ：424107420]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
     <title><![CDATA[标签云]]></title>
