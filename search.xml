@@ -25,7 +25,7 @@
   <entry>
     <title><![CDATA[贪心算法_旅行]]></title>
     <url>%2F%E7%AE%97%E6%B3%95%E9%A2%98%2F%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E6%97%85%E8%A1%8C%2F</url>
-    <content type="text"><![CDATA[Problem D. 旅行时间限制 1000 ms内存限制 128 MB 题目描述某趟列车的最大载客容量为V人，沿途共有n个停靠站，其中始发站为第1站，终点站为第n站。在第1站至第n-1站之间，共有m个团队申请购票搭乘，若规定：（1）对于某个团队的购票申请，要么全部满足，要么全部拒绝，即不允许只满足部分。（2）每个乘客的搭乘费用为其所乘站数。问：应如何选择这些购票申请，能使该趟列车获得最大的搭乘费用？其中，每个团队的购票申请格式是以空格分隔的三个整数：a b t，即表示有t个人需要从第a站点乘至第b站点（注：每个团队的所有人员都必须同时在a站上车，且必须同时在后面的b站下车）。 输入数据输入数据有若干行。第 1 行只有三个整数 n，m，v，分别表示站点数、申请数、列车的最大载客容量。这三个整数之间都以一个空格分隔。第 2 行至第 m+1 行，每行有三个整数，中间都以一个空格分隔。其中第 k+1 行的三个整数 a，b，t 表示第 k 个申请，含义为：有 t 个人需要从第 a 站乘至第 b 站。其中：1 ≤ n ≤ 10；1 ≤ m ≤ 18 输出数据输出数据只有一行，该行只有一个整数，为该列车能获得的最大搭乘费用。 样例输入12343 3 51 2 22 3 51 3 4 样例输出18 题解直接枚举所有可能的方案数，对于每一个团队，只有两个选择，搭乘与不搭乘，可以采用二进制0与1枚举的方式。由于团队申请数目m最多只有18个，所以最多有2^18种方案。对于每一种方案，统计每一站车上的总人数，如果某一站车上总人数超过了列车的最大载客容量v，那么此方案不可行；否则，比较搭乘费用，取最大的搭乘费用即可。 AC代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;using namespace std;int n, m, v, a[20], b[20], t[20], num[25];long long cost = 0, temp;bool flag;int i, j;int main() &#123; cin &gt;&gt; n &gt;&gt; m &gt;&gt; v; for (i = 0; i &lt; m; i++) &#123; cin &gt;&gt; a[i] &gt;&gt; b[i] &gt;&gt; t[i]; &#125; // 枚举二进制方案数 for (i = 0; i &lt; (1 &lt;&lt; m); i++) &#123; // 变量的初始化 temp = 0; flag = true; memset(num, 0, sizeof(num)); // 判断决定每一个团队是否可以搭乘 for (j = 0; j &lt; m; j++) &#123; if (i &amp; (1 &lt;&lt; j)) &#123; num[a[j]] += t[j]; num[b[j]] -= t[j]; temp += (b[j] - a[j]) * t[j]; &#125; &#125; // 统计每一站车上的总人数，如果大于容量，就不满足条件 for (j = 1; j &lt;= n; j++) &#123; num[j] += num[j - 1]; if (num[j] &gt; v) &#123; flag = false; &#125; &#125; // 满足条件则取最大搭乘费用 if (flag) &#123; cost = max(cost, temp); &#125; &#125; cout &lt;&lt; cost &lt;&lt; endl; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[Problem D. 旅行时间限制 1000 ms内存限制 128 MB 题目描述某趟列车的最大载客容量为V人，沿途共有n个停靠站，其中始发站为第1站，终点站为第n站。在第1站至第n-1站之间，共有m个团队申请购票搭乘，若规定：（1）对于某个团队的购票申请，要么全部满足，要么全部拒绝，即不允许只满足部分。（2）每个乘客的搭乘费用为其所乘站数。问：应如何选择这些购票申请，能使该趟列车获得最大的搭乘费用？其中，每个团队的购票申请格式是以空格分隔的三个整数：a b t，即表示有t个人需要从第a站点乘至第b站点（注：每个团队的所有人员都必须同时在a站上车，且必须同时在后面的b站下车）。 输入数据输入数据有若干行。第 1 行只有三个整数 n，m，v，分别表示站点数、申请数、列车的最大载客容量。这三个整数之间都以一个空格分隔。第 2 行至第 m+1 行，每行有三个整数，中间都以一个空格分隔。其中第 k+1 行的三个整数 a，b，t 表示第 k 个申请，含义为：有 t 个人需要从第 a 站乘至第 b 站。其中：1 ≤ n ≤ 10；1 ≤ m ≤ 18 输出数据输出数据只有一行，该行只有一个整数，为该列车能获得的最大搭乘费用。 样例输入12343 3 51 2 22 3 51 3 4 样例输出18 题解这道题与0-1背包问题类似。直接枚举所有可能的方案数，对于每一个团队，只有两个选择，搭乘与不搭乘，可以采用二进制0与1枚举的方式。由于团队申请数目m最多只有18个，所以最多有2^18种方案。对于每一种方案，统计每一站车上的总人数，如果某一站车上总人数超过了列车的最大载客容量v，那么此方案不可行；否则，比较搭乘费用，取最大的搭乘费用即可。 AC代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;using namespace std;int n, m, v, a[20], b[20], t[20], num[25];long long cost = 0, temp;bool flag;int i, j;int main() &#123; cin &gt;&gt; n &gt;&gt; m &gt;&gt; v; for (i = 0; i &lt; m; i++) &#123; cin &gt;&gt; a[i] &gt;&gt; b[i] &gt;&gt; t[i]; &#125; // 枚举二进制方案数 for (i = 0; i &lt; (1 &lt;&lt; m); i++) &#123; // 变量的初始化 temp = 0; flag = true; memset(num, 0, sizeof(num)); // 判断决定每一个团队是否可以搭乘 for (j = 0; j &lt; m; j++) &#123; if (i &amp; (1 &lt;&lt; j)) &#123; num[a[j]] += t[j]; num[b[j]] -= t[j]; temp += (b[j] - a[j]) * t[j]; &#125; &#125; // 统计每一站车上的总人数，如果大于容量，就不满足条件 for (j = 1; j &lt;= n; j++) &#123; num[j] += num[j - 1]; if (num[j] &gt; v) &#123; flag = false; &#125; &#125; // 满足条件则取最大搭乘费用 if (flag) &#123; cost = max(cost, temp); &#125; &#125; cout &lt;&lt; cost &lt;&lt; endl; return 0;&#125;]]></content>
       <categories>
         <category>算法题</category>
       </categories>
@@ -69,7 +69,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-aBTmAwuQ"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-jfbzvjDt"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
@@ -137,6 +137,11 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[关于我]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[关于我 我叫赵鹏 男 石家庄人 现居北京 学生 联系我 Email：424107420@qq.com GitHub：zhaopeng0103 WeChat：zp18713598785 QQ：424107420]]></content>
@@ -144,11 +149,6 @@
   <entry>
     <title><![CDATA[标签云]]></title>
     <url>%2Ftags%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
 </search>
