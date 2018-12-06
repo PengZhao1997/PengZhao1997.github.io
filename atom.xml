@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2018-12-04T12:41:40.482Z</updated>
+  <updated>2018-12-06T06:47:06.987Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>贪心算法-任务调度问题</title>
+    <link href="https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98/"/>
+    <id>https://zhaopeng0103.github.io/算法题/贪心算法-任务调度问题/</id>
+    <published>2018-12-06T06:12:24.000Z</published>
+    <updated>2018-12-06T06:47:06.987Z</updated>
+    
+    <summary type="html">
+    
+      一个单位时间任务是恰好需要一个单位时间完成的任务。给定一个单位时间任务的有限集 S 。关于S 的一个时间表用于描述S 中单位时间任务的执行次序。时间表中第 1 个任务从时间 0 开始执行直至时间 1 结束，第 2 个任务从时间 1 开始执行至时间 2 结束，…，第n个任务从时间 n-1 开始执行直至时间 n 结束。具有截止时间和误时惩罚的单位时间任务时间表问题可描述如下：(1) n 个单位时间任务的集合 S = {1,2,…,n}（n ≤ 500）；(2) 任务i的截止时间 d[i], 1 ≤ i ≤ n, 1 ≤ d[i] ≤ n，即要求任务 i 在时间 d[i] 之前结束；(3) 任务 i 的误时惩罚 1 ≤ w[i] ≤ 1000, 1 ≤ i ≤ n, 即任务 i 未在时间 d[i] 之前结束将招致 w[i] 的惩罚；若按时完成则无惩罚。任务时间表问题要求确定 S 的一个时间表（最优时间表）使得总误时惩罚达到最小。
+    
+    </summary>
+    
+      <category term="算法题" scheme="https://zhaopeng0103.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+      <category term="贪心" scheme="https://zhaopeng0103.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
     <title>贪心算法-合并果子</title>
     <link href="https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E5%90%88%E5%B9%B6%E6%9E%9C%E5%AD%90/"/>
     <id>https://zhaopeng0103.github.io/算法题/贪心算法-合并果子/</id>
     <published>2018-12-04T12:20:03.000Z</published>
-    <updated>2018-12-04T12:41:40.482Z</updated>
+    <updated>2018-12-06T06:15:56.174Z</updated>
     
     <summary type="html">
     
