@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux常用命令大全]]></title>
+    <url>%2FLinux%2FLinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%2F</url>
+    <content type="text"><![CDATA[ls -l|grep “^-“| wc -l 查看当前目录下的文件数量（不包含子目录中的文件） ls -lR|grep “^-“| wc -l 查看当前目录下的文件数量（包含子目录中的文件） 注意：R，代表子目录 ls -l|grep “^d”| wc -l 查看当前目录下的文件夹目录个数（不包含子目录中的目录），如果需要查看子目录，加上R ls -lR 2018*/|grep “^-“| wc -l 查询当前路径下的指定前缀名的目录下的文件数量，如统计所有以”2018”开头的目录下的全部文件数量]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[贪心算法-任务调度问题]]></title>
     <url>%2F%E7%AE%97%E6%B3%95%E9%A2%98%2F%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[Problem E.任务调度问题时间限制 1000 ms内存限制 128 MB 题目描述一个单位时间任务是恰好需要一个单位时间完成的任务。给定一个单位时间任务的有限集 S 。关于S 的一个时间表用于描述S 中单位时间任务的执行次序。时间表中第 1 个任务从时间 0 开始执行直至时间 1 结束，第 2 个任务从时间 1 开始执行至时间 2 结束，…，第n个任务从时间 n-1 开始执行直至时间 n 结束。具有截止时间和误时惩罚的单位时间任务时间表问题可描述如下：(1) n 个单位时间任务的集合 S = {1,2,…,n}（n ≤ 500）；(2) 任务i的截止时间 d[i], 1 ≤ i ≤ n, 1 ≤ d[i] ≤ n，即要求任务 i 在时间 d[i] 之前结束；(3) 任务 i 的误时惩罚 1 ≤ w[i] ≤ 1000, 1 ≤ i ≤ n, 即任务 i 未在时间 d[i] 之前结束将招致 w[i] 的惩罚；若按时完成则无惩罚。任务时间表问题要求确定 S 的一个时间表（最优时间表）使得总误时惩罚达到最小。 输入数据第一行是正整数 n ，表示任务数。接下来的 2 行中，每行有 n 个正整数，分别表示各任务的截止时间和误时惩罚。 输出数据将计算出的最小总误时惩罚输出。 样例输入12374 2 4 3 1 4 670 60 50 40 30 20 10 样例输出150 题解这道题目类似于活动安排问题。首先将所有任务按照误时惩罚从大到小排序，然后依次从左到右遍历每个任务，将其安排在离截止时间点最近的（包括截止时间点处）未安排任务的时间点处完成，若无法找到这个时间点，则这个任务无法按时完成，将其误时惩罚加到总误时惩罚中。这样得到的总误时惩罚是最小的。 AC代码123456789101112131415161718192021222324252627282930313233343536373839404142434445#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;#include &lt;cmath&gt;using namespace std;int n, d[510], w[510], visit[510];int i, j;long long result;int main() &#123; memset(visit, 0, sizeof(visit)); cin &gt;&gt; n; for (i = 1; i &lt;= n; i++) &#123; cin &gt;&gt; d[i]; &#125; for (i = 1; i &lt;= n; i++) &#123; cin &gt;&gt; w[i]; &#125; for (i = 0; i &lt; n; i++) &#123; for (j = 1; j &lt; n; j++) &#123; if (w[j] &lt; w[j + 1]) &#123; swap(d[j], d[j + 1]); swap(w[j], w[j + 1]); &#125; &#125; &#125; for (i = 1; i &lt;= n; i++) &#123; bool flag = false; for (j = d[i]; j &gt; 0; j--) &#123; if (!visit[j]) &#123; visit[j] = 1; flag = true; break; &#125; &#125; if (!flag) &#123; result += w[i]; &#125; &#125; cout &lt;&lt; result &lt;&lt; endl; return 0;&#125;]]></content>
@@ -91,7 +102,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-cTNmdMKD"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-LWeYmYWv"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
