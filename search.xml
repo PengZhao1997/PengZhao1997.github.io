@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux常用命令大全]]></title>
     <url>%2FLinux%2FLinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%2F</url>
-    <content type="text"><![CDATA[ls -l|grep “^-“| wc -l 查看当前目录下的文件数量（不包含子目录中的文件） ls -lR|grep “^-“| wc -l 查看当前目录下的文件数量（包含子目录中的文件） 注意：R，代表子目录 ls -l|grep “^d”| wc -l 查看当前目录下的文件夹目录个数（不包含子目录中的目录），如果需要查看子目录，加上R ls -lR 2018*/|grep “^-“| wc -l 查询当前路径下的指定前缀名的目录下的文件数量，如统计所有以”2018”开头的目录下的全部文件数量]]></content>
+    <content type="text"><![CDATA[查看当前目录下的文件数量（不包含子目录中的文件） 1ls -l|grep "^-"| wc -l 查看当前目录下的文件数量（包含子目录中的文件） 注意：R，代表子目录 1ls -lR|grep "^-"| wc -l 查看当前目录下的文件夹目录个数（不包含子目录中的目录），如果需要查看子目录，加上R 1ls -l|grep "^d"| wc -l 查询当前路径下的指定前缀名的目录下的文件数量，如统计所有以”2018”开头的目录下的全部文件数量 1ls -lR 2018\*/|grep "^-"| wc -l]]></content>
       <categories>
         <category>Linux</category>
       </categories>
@@ -102,7 +102,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-LWeYmYWv"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-ptTXNPav"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
