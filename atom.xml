@@ -45,17 +45,11 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BAPSENet%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-旷视科技提出PSENet文本检测算法/</id>
     <published>2019-04-29T13:23:11.000Z</published>
-    <updated>2019-04-29T14:12:01.420Z</updated>
+    <updated>2019-04-29T14:13:05.217Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      这个文章主要做的创新点大概就是预测多个分割结果，分别是S1,S2,S3…Sn代表不同的等级面积的结果，S1最小，基本就是文本骨架，Sn最大。然后在后处理的过程中，先用最小的预测结果去区分文本，再逐步扩张成正常文本大小。
     
     </summary>
     
