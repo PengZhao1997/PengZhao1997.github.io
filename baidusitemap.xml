@@ -4,14 +4,68 @@
 
     
   <url>
-    <loc>https://zhaopeng0103.github.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2019-04-29T13:12:40.792Z</lastmod>
+    <loc>https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BAPSENet%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2019-04-29T13:37:01.074Z</lastmod>
     <data>
         <display>
-        <title>机器学习与深度学习常见面试题</title>
+        <title>CVPR2019 | 旷视科技提出PSENet文本检测算法</title>
+        <pubTime>2019-04-29T13:23:11.000Z</pubTime>
+        
+        <tag>文本检测</tag>
+         
+        <tag>PSENet</tag>
+         
+        <tag>CVPR2019</tag>
+         
+        <tag>旷视科技</tag>
+         
+         
+           
+             
+              <breadCrumb title="文本检测" url="https://zhaopeng0103.github.io/categories/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhaopeng0103.github.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%8B%EF%BC%89/</loc>
+    <lastmod>2019-04-29T13:30:04.121Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习与深度学习常见面试题（下）</title>
+        <pubTime>2019-04-29T13:26:37.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+        <tag>深度学习</tag>
+         
+        <tag>面试题</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习与深度学习" url="https://zhaopeng0103.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhaopeng0103.github.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%8A%EF%BC%89/</loc>
+    <lastmod>2019-04-29T13:29:34.677Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习与深度学习常见面试题（上）</title>
         <pubTime>2019-04-29T11:59:10.000Z</pubTime>
         
+        <tag>机器学习</tag>
+         
         <tag>深度学习</tag>
+         
+        <tag>面试题</tag>
          
          
            
