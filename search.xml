@@ -142,7 +142,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-DtjizNAU"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-qFOxZkAB"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
