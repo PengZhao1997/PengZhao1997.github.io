@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-04-30T02:49:35.989Z</updated>
+  <updated>2019-05-15T04:57:16.015Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CVPR2019 | 百度提出LOMO文本检测算法</title>
+    <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E7%99%BE%E5%BA%A6%E6%8F%90%E5%87%BALOMO%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/"/>
+    <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-百度提出LOMO文本检测算法/</id>
+    <published>2019-05-15T04:15:26.000Z</published>
+    <updated>2019-05-15T04:57:16.015Z</updated>
+    
+    <summary type="html">
+    
+      为了解决长文本和任意形状（弯曲、波浪、多方向）文本检测的问题，本文提出了一种文本检测方法LOMO（Look More than Once）。LOMO由DR（direct regression）、IRM（iterative refinement module）和SEM（shape expression module）三个模块组成。DR直接生成四边形的文本提议。IRM迭代式的调整由DR生成的提议，用于解决长文本检测的问题。SEM回归文本区域、文本中心线和边界偏移三种类型的几何性质来重建不规则文本的精确表示，用于解决任意形状文本检测的问题。LOMO可以一种end-to-end的方式训练，同时在多语言的文本检测上也获得了较好的结果。
+    
+    </summary>
+    
+      <category term="文本检测" scheme="https://zhaopeng0103.github.io/categories/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
+    
+    
+      <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
+    
+      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
+    
+      <category term="LOMO" scheme="https://zhaopeng0103.github.io/tags/LOMO/"/>
+    
+      <category term="百度" scheme="https://zhaopeng0103.github.io/tags/%E7%99%BE%E5%BA%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习与深度学习常见问题总结（下）</title>
@@ -43,11 +69,11 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BAPSENet%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-旷视科技提出PSENet文本检测算法/</id>
     <published>2019-04-29T13:23:11.000Z</published>
-    <updated>2019-04-30T02:55:22.084Z</updated>
+    <updated>2019-05-15T04:56:28.374Z</updated>
     
     <summary type="html">
     
-      这个文章主要做的创新点大概就是预测多个分割结果，分别是S1,S2,S3…Sn代表不同的等级面积的结果，S1最小，基本就是文本骨架，Sn最大。然后在后处理的过程中，先用最小的预测结果去区分文本，再逐步扩张成正常文本大小。
+      本文提出了一个渐进式尺度扩张网络（PSENet）。它对于每一个文本实例生成不同尺度的核，然后逐渐的扩张检测区域从最小尺度的核到更大的直至完整的文本实例，这种方法不仅可以检测任意形状的文本实例，而且能够很容易的将紧邻的文本实例分开。
     
     </summary>
     
@@ -211,7 +237,7 @@
     <link href="https://zhaopeng0103.github.io/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/%E9%9D%9E%E6%9E%81%E5%A4%A7%E5%80%BC%E6%8A%91%E5%88%B6NMS-Non-Maximum-Suppression/"/>
     <id>https://zhaopeng0103.github.io/目标检测与定位/非极大值抑制NMS-Non-Maximum-Suppression/</id>
     <published>2018-11-25T13:13:03.000Z</published>
-    <updated>2018-12-06T07:24:13.860Z</updated>
+    <updated>2019-05-15T04:39:58.782Z</updated>
     
     <summary type="html">
     
