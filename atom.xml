@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-05-15T06:18:30.648Z</updated>
+  <updated>2019-05-15T10:38:53.916Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/ECCV2018-%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA%E5%BC%AF%E6%9B%B2%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BATextSnake/"/>
     <id>https://zhaopeng0103.github.io/文本检测/ECCV2018-旷视科技提出弯曲文本表示TextSnake/</id>
     <published>2019-05-15T06:14:22.000Z</published>
-    <updated>2019-05-15T06:18:30.648Z</updated>
+    <updated>2019-05-15T10:38:53.916Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      TextSnake，一种任意形状文本的表示方法
     
     </summary>
     
@@ -66,9 +60,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
-    
       <category term="CRAFT" scheme="https://zhaopeng0103.github.io/tags/CRAFT/"/>
+    
+      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
     
       <category term="NAVER" scheme="https://zhaopeng0103.github.io/tags/NAVER/"/>
     
@@ -79,7 +73,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E7%99%BE%E5%BA%A6%E6%8F%90%E5%87%BALOMO%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-百度提出LOMO文本检测算法/</id>
     <published>2019-05-15T04:15:26.000Z</published>
-    <updated>2019-05-15T10:34:55.555Z</updated>
+    <updated>2019-05-15T10:38:06.367Z</updated>
     
     <summary type="html">
     
@@ -140,9 +134,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="PSENet" scheme="https://zhaopeng0103.github.io/tags/PSENet/"/>
-    
       <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
+    
+      <category term="PSENet" scheme="https://zhaopeng0103.github.io/tags/PSENet/"/>
     
       <category term="旷视科技" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80/"/>
     

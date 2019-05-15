@@ -4,8 +4,34 @@
 
     
   <url>
+    <loc>https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/ECCV2018-%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA%E5%BC%AF%E6%9B%B2%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BATextSnake/</loc>
+    <lastmod>2019-05-15T10:38:53.916Z</lastmod>
+    <data>
+        <display>
+        <title>ECCV2018 | 旷视科技提出弯曲文本表示TextSnake</title>
+        <pubTime>2019-05-15T06:14:22.000Z</pubTime>
+        
+        <tag>文本检测</tag>
+         
+        <tag>TextSnake</tag>
+         
+        <tag>ECCV2018</tag>
+         
+        <tag>旷视</tag>
+         
+         
+           
+             
+              <breadCrumb title="文本检测" url="https://zhaopeng0103.github.io/categories/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E7%99%BE%E5%BA%A6%E6%8F%90%E5%87%BALOMO%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2019-05-15T10:34:55.555Z</lastmod>
+    <lastmod>2019-05-15T10:38:06.367Z</lastmod>
     <data>
         <display>
         <title>CVPR2019 | 百度提出LOMO文本检测算法</title>
@@ -39,9 +65,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>CVPR2019</tag>
-         
         <tag>CRAFT</tag>
+         
+        <tag>CVPR2019</tag>
          
         <tag>NAVER</tag>
          
@@ -65,37 +91,11 @@
         
         <tag>文本检测</tag>
          
-        <tag>PSENet</tag>
-         
         <tag>CVPR2019</tag>
          
+        <tag>PSENet</tag>
+         
         <tag>旷视科技</tag>
-         
-         
-           
-             
-              <breadCrumb title="文本检测" url="https://zhaopeng0103.github.io/categories/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/ECCV2018-%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA%E5%BC%AF%E6%9B%B2%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BATextSnake/</loc>
-    <lastmod>2019-05-15T06:18:30.648Z</lastmod>
-    <data>
-        <display>
-        <title>ECCV2018 | 旷视科技提出弯曲文本表示TextSnake</title>
-        <pubTime>2019-05-15T06:14:22.000Z</pubTime>
-        
-        <tag>文本检测</tag>
-         
-        <tag>TextSnake</tag>
-         
-        <tag>ECCV2018</tag>
-         
-        <tag>旷视</tag>
          
          
            
