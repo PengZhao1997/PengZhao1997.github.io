@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-06-15T11:23:12.917Z</updated>
+  <updated>2019-06-15T11:32:42.431Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CVPR2019-商汤提出金字塔掩模文本检测器：PMTD</title>
+    <link href="https://zhaopeng0103.github.io/default/CVPR2019-%E5%95%86%E6%B1%A4%E6%8F%90%E5%87%BA%E9%87%91%E5%AD%97%E5%A1%94%E6%8E%A9%E6%A8%A1%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E5%99%A8%EF%BC%9APMTD/"/>
+    <id>https://zhaopeng0103.github.io/default/CVPR2019-商汤提出金字塔掩模文本检测器：PMTD/</id>
+    <published>2019-06-15T11:32:42.000Z</published>
+    <updated>2019-06-15T11:32:42.431Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>ECCV2018 | 旷视科技提出弯曲文本表示TextSnake</title>
@@ -47,7 +69,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-NAVER%E6%8F%90%E5%87%BA%E5%AD%97%E7%AC%A6%E7%BA%A7%E5%88%AB%E7%9A%84%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%BD%91%E7%BB%9C%EF%BC%9ACRAFT/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-NAVER提出字符级别的文本检测网络：CRAFT/</id>
     <published>2019-05-15T06:07:44.000Z</published>
-    <updated>2019-06-15T10:58:47.319Z</updated>
+    <updated>2019-06-15T11:29:16.607Z</updated>
     
     <summary type="html">
     
@@ -418,28 +440,6 @@
     <summary type="html">
     
       考虑经典的约瑟夫环模型：n个人按顺序围成一圈，从第一个人开始报数，从1开始报，报到k这个数的人会被移出去，然后下一个人从1开始重新报数，第n个人报完数之后第1个人接着报数，问整个过程中第1个人报了几次数。
-    
-    </summary>
-    
-      <category term="算法题" scheme="https://zhaopeng0103.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
-    
-    
-      <category term="模拟" scheme="https://zhaopeng0103.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-      <category term="程序设计竞赛" scheme="https://zhaopeng0103.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程序设计竞赛:魔法师排队</title>
-    <link href="https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B-%E9%AD%94%E6%B3%95%E5%B8%88%E6%8E%92%E9%98%9F/"/>
-    <id>https://zhaopeng0103.github.io/算法题/程序设计竞赛-魔法师排队/</id>
-    <published>2018-11-15T10:37:03.000Z</published>
-    <updated>2018-11-24T11:11:23.520Z</updated>
-    
-    <summary type="html">
-    
-      有n个魔法师在排队买魔法面包，每个魔法师都有自己的魔力值，用一个正整数表示。 魔法师都不喜欢排队，如果任意时刻某个魔法师发现前面的魔法师的魔力值比自己小，那么这个魔法师就会用法术把前面的人传送到异空间。 请输出有多少个魔法师会被传送到异空间。
     
     </summary>
     
