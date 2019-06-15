@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[CVPR2019-商汤提出金字塔掩模文本检测器：PMTD]]></title>
-    <url>%2Fdefault%2FCVPR2019-%E5%95%86%E6%B1%A4%E6%8F%90%E5%87%BA%E9%87%91%E5%AD%97%E5%A1%94%E6%8E%A9%E6%A8%A1%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E5%99%A8%EF%BC%9APMTD%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[CVPR2019 | 商汤提出金字塔掩模文本检测器：PMTD]]></title>
+    <url>%2F%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%2FCVPR2019-%E5%95%86%E6%B1%A4%E6%8F%90%E5%87%BA%E9%87%91%E5%AD%97%E5%A1%94%E6%8E%A9%E6%A8%A1%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E5%99%A8%EF%BC%9APMTD%2F</url>
+    <content type="text"><![CDATA[Pyramid Mask Text DetectorKeyWords Plus: CVPR2019 Quadrilateral Textpaper：https://arxiv.org/pdf/1903.11800.pdfreference: Liu, Jingchao &amp; Liu, Xuebo &amp; Sheng, Jie &amp; Liang, Ding &amp; Li, Xin &amp; Liu, Qingjie. (2019). Pyramid Mask Text Detector.Github: 未开源 本文是商汤和香港中文大学联合发表并于 2019.03.28 挂在 arXiv 上，本文的方法在 ICDAR2017 MIT 数据集上，相比于之前最高的精确率提升了 5.83% 百分点，达到 80.13%；在 ICDAR2015 数据集上，提升了 1.34% 个百分点，达到 89.33%。 论文主要思想本文提出了 Pyramid Mask 文本检测器，简称 PMTD。它主要做了如下工作： 提出了软语义分割的训练数据标签。与现有的基于 Mask RCNN 方法（文本区域内的像素标签为 0 或 1）不同，本文针对文本区域和背景区域提出了软语义分割（soft semantic segmentation），文本行区域内的像素标签值范围在 0-1 之间，不同位置的像素标签值是由其当前位置到文本边界框的距离决定的，这样做的好处是可以考虑训练数据的形状和位置信息，同时可以一定程度上缓解文本边界区域的一些背景干扰； 提出通过平面聚类的方法构建最终的文本行。通过像素坐标及对应像素点的得分构建 3D 点集合，然后通过金字塔平面聚类的迭代方法得到最终的文本行。 实验文中做了两个实验：baseline 和 PMTD。baseline 是基于 Mask RCNN 的，主干提取特征网络采用的是 ResNet50，网络结构采用了 FPN。相比原生的 Mask RCNN，做了 3 方面修改：1）数据增广；2）RPN anchor；3）OHEM。 baseline存在的问题 没有考虑普通文本一般是四边形，仅按照像素进行分类，丢失了与形状相关的信息； 将文本行的四边形的标定转换为像素级别的 groundtruth 会造成 groundtruth 不准的问题； 在 Mask R-CNN 中是先得到检测的框，然后对框内的物体进行分割，如果框的位置不准确，这样会导致分割出来的结果也不会准确。 PMTD所做的改进PMTD 是针对 baseline 中存在的问题提出的改进，主要包括： 网络结构的改进：PMTD 采用了更大的感受野来获取更高的准确率，为了获取更大的感受野，本文通过改变 mask 分支，将该分支中的前 4 个卷积层改成步长为 2 的空洞卷积，因为反卷积操作会带来棋盘效应，所以这里采用双线性采样＋卷积层来替换反卷积层； 对于训练标签生成部分，使用了金字塔标签生成，具体做法是：文本行的中心点为金字塔的顶点（score=1），文本行的边为金字塔的底边，对金字塔的每个面中应该包含哪些像素点采用双线性插值的方法。 最终文本行的生成文中使用了平面聚类的方法，用于迭代回归从已学习到的 soft text mask 寻找最佳的文本行的边界框。在具体操作时，可以看成与金字塔标签生成的反过程。]]></content>
+      <categories>
+        <category>文本检测</category>
+      </categories>
+      <tags>
+        <tag>文本检测</tag>
+        <tag>CVPR2019</tag>
+        <tag>PMTD</tag>
+        <tag>商汤</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[ECCV2018 | 旷视科技提出弯曲文本表示TextSnake]]></title>
@@ -187,7 +196,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-CYgRjmDx"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-ulbTFXjs"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
@@ -255,14 +264,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[关于我]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[关于我 我叫赵鹏 男 石家庄人 现居北京 学生 联系我 Email：424107420@qq.com GitHub：zhaopeng0103 WeChat：zp18713598785 QQ：424107420]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
     <title><![CDATA[标签云]]></title>
