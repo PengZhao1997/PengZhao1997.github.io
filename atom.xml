@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-07-02T10:53:03.170Z</updated>
+  <updated>2019-07-05T04:43:23.355Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WACV2018 | 微软亚研院提出带PAN的基于Mask R-CNN的场景文本检测方法</title>
+    <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/WACV2018-%E5%BE%AE%E8%BD%AF%E4%BA%9A%E7%A0%94%E9%99%A2%E6%8F%90%E5%87%BA%E5%B8%A6PAN%E7%9A%84%E5%9F%BA%E4%BA%8EMask-R-CNN%E7%9A%84%E5%9C%BA%E6%99%AF%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95/"/>
+    <id>https://zhaopeng0103.github.io/文本检测/WACV2018-微软亚研院提出带PAN的基于Mask-R-CNN的场景文本检测方法/</id>
+    <published>2019-07-04T10:14:02.000Z</published>
+    <updated>2019-07-05T04:43:23.355Z</updated>
+    
+    <summary type="html">
+    
+      本文提出了一个基于Mask R-CNN的文本检测方法，可以检测多方向的和曲线文本。为了增强Mask R-CNN用于文本检测任务的特征表示能力，首次将PAN用于Mask R-CNN的主干网络，实验证明PAN可以有效抑制类文本的背景的误报。不足之处是PAN主干网与Mask R-CNN框架的计算量大，速度慢；并且受RPN生成的矩形建议框的限制，对于倾斜的紧邻长文本行预测效果不好。
+    
+    </summary>
+    
+      <category term="文本检测" scheme="https://zhaopeng0103.github.io/categories/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
+    
+    
+      <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
+    
+      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
+    
+      <category term="Mask R-CNN" scheme="https://zhaopeng0103.github.io/tags/Mask-R-CNN/"/>
+    
+      <category term="PAN" scheme="https://zhaopeng0103.github.io/tags/PAN/"/>
+    
+      <category term="WACV2018" scheme="https://zhaopeng0103.github.io/tags/WACV2018/"/>
+    
+      <category term="微软亚研院" scheme="https://zhaopeng0103.github.io/tags/%E5%BE%AE%E8%BD%AF%E4%BA%9A%E7%A0%94%E9%99%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>曲文检测论文汇总（2018.12.26）</title>
@@ -132,9 +162,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
-    
       <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
+    
+      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
     
       <category term="TextSnake" scheme="https://zhaopeng0103.github.io/tags/TextSnake/"/>
     
@@ -160,13 +190,13 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="CRAFT" scheme="https://zhaopeng0103.github.io/tags/CRAFT/"/>
-    
       <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
     
-      <category term="NAVER" scheme="https://zhaopeng0103.github.io/tags/NAVER/"/>
-    
       <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
+    
+      <category term="CRAFT" scheme="https://zhaopeng0103.github.io/tags/CRAFT/"/>
+    
+      <category term="NAVER" scheme="https://zhaopeng0103.github.io/tags/NAVER/"/>
     
   </entry>
   
@@ -238,13 +268,13 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
-    
-      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
-    
       <category term="PSENet" scheme="https://zhaopeng0103.github.io/tags/PSENet/"/>
     
+      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
+    
       <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
+    
+      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
     
   </entry>
   
@@ -447,26 +477,6 @@
     
     
       <category term="git使用" scheme="https://zhaopeng0103.github.io/tags/git%E4%BD%BF%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>好听的歌曲</title>
-    <link href="https://zhaopeng0103.github.io/music/%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2/"/>
-    <id>https://zhaopeng0103.github.io/music/好听的歌曲/</id>
-    <published>2018-11-23T16:31:54.000Z</published>
-    <updated>2018-11-25T12:47:42.685Z</updated>
-    
-    <summary type="html">
-    
-      好听的歌曲
-    
-    </summary>
-    
-      <category term="music" scheme="https://zhaopeng0103.github.io/categories/music/"/>
-    
-    
-      <category term="music" scheme="https://zhaopeng0103.github.io/tags/music/"/>
     
   </entry>
   
