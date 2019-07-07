@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-07-07T07:03:46.202Z</updated>
+  <updated>2019-07-07T07:05:27.114Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhaopeng0103.github.io/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E6%9C%AA%E7%9F%A52018-%E5%8C%97%E7%90%86%E3%80%81%E6%97%B7%E8%A7%86%E3%80%81%E5%8C%97%E5%A4%A7%E8%81%94%E5%90%88%E6%8F%90%E5%87%BAPAN%EF%BC%8C%E7%94%A8%E4%BA%8E%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/"/>
     <id>https://zhaopeng0103.github.io/语义分割/未知2018-北理、旷视、北大联合提出PAN，用于语义分割/</id>
     <published>2019-07-05T11:30:57.000Z</published>
-    <updated>2019-07-07T07:03:46.202Z</updated>
+    <updated>2019-07-07T07:05:27.114Z</updated>
     
     <summary type="html">
     
@@ -75,7 +75,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/%E6%9B%B2%E6%96%87%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%B1%87%E6%80%BB%EF%BC%882018-12-26%EF%BC%89/"/>
     <id>https://zhaopeng0103.github.io/文本检测/曲文检测论文汇总（2018-12-26）/</id>
     <published>2019-07-02T07:48:24.000Z</published>
-    <updated>2019-07-02T10:53:03.170Z</updated>
+    <updated>2019-07-07T07:14:50.323Z</updated>
     
     <summary type="html">
     
@@ -97,7 +97,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2018-%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA%E9%80%9A%E8%BF%87%E8%A7%92%E7%82%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%8C%BA%E5%9F%9F%E5%88%86%E5%89%B2%E6%9D%A5%E6%A3%80%E6%B5%8B%E5%A4%9A%E6%96%B9%E5%90%91%E7%9A%84%E6%96%87%E6%9C%AC/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2018-旷视科技提出通过角点定位与区域分割来检测多方向的文本/</id>
     <published>2019-07-01T12:55:35.000Z</published>
-    <updated>2019-07-02T10:52:02.582Z</updated>
+    <updated>2019-07-07T07:07:40.731Z</updated>
     
     <summary type="html">
     
@@ -110,9 +110,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
-    
       <category term="四边形文本" scheme="https://zhaopeng0103.github.io/tags/%E5%9B%9B%E8%BE%B9%E5%BD%A2%E6%96%87%E6%9C%AC/"/>
+    
+      <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
     
       <category term="角点定位与区域分割" scheme="https://zhaopeng0103.github.io/tags/%E8%A7%92%E7%82%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%8C%BA%E5%9F%9F%E5%88%86%E5%89%B2/"/>
     
@@ -125,7 +125,7 @@
     <link href="https://zhaopeng0103.github.io/CNN/CNN%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84%E7%9A%84%E5%8F%91%E5%B1%95%EF%BC%9A%E4%BB%8ELeNet%E5%88%B0EfficientNet/"/>
     <id>https://zhaopeng0103.github.io/CNN/CNN网络结构的发展：从LeNet到EfficientNet/</id>
     <published>2019-06-17T11:25:59.000Z</published>
-    <updated>2019-06-17T13:03:28.097Z</updated>
+    <updated>2019-07-07T07:07:12.188Z</updated>
     
     <summary type="html">
     
@@ -145,7 +145,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E5%95%86%E6%B1%A4%E6%8F%90%E5%87%BA%E9%87%91%E5%AD%97%E5%A1%94%E6%8E%A9%E6%A8%A1%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E5%99%A8%EF%BC%9APMTD/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-商汤提出金字塔掩模文本检测器：PMTD/</id>
     <published>2019-06-15T12:26:42.000Z</published>
-    <updated>2019-07-02T06:52:21.430Z</updated>
+    <updated>2019-07-07T07:12:06.130Z</updated>
     
     <summary type="html">
     
@@ -201,7 +201,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-NAVER%E6%8F%90%E5%87%BA%E5%AD%97%E7%AC%A6%E7%BA%A7%E5%88%AB%E7%9A%84%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%BD%91%E7%BB%9C%EF%BC%9ACRAFT/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-NAVER提出字符级别的文本检测网络：CRAFT/</id>
     <published>2019-05-15T06:07:44.000Z</published>
-    <updated>2019-07-02T06:53:08.943Z</updated>
+    <updated>2019-07-07T07:08:17.026Z</updated>
     
     <summary type="html">
     
@@ -229,7 +229,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E7%99%BE%E5%BA%A6%E6%8F%90%E5%87%BALOMO%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-百度提出LOMO文本检测算法/</id>
     <published>2019-05-15T04:15:26.000Z</published>
-    <updated>2019-07-02T06:52:51.446Z</updated>
+    <updated>2019-07-07T07:09:47.770Z</updated>
     
     <summary type="html">
     
@@ -279,7 +279,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E6%97%B7%E8%A7%86%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BAPSENet%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-旷视科技提出PSENet文本检测算法/</id>
     <published>2019-04-29T13:23:11.000Z</published>
-    <updated>2019-07-02T06:52:30.593Z</updated>
+    <updated>2019-07-07T07:11:05.412Z</updated>
     
     <summary type="html">
     
