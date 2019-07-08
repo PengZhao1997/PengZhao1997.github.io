@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-07-07T07:38:24.843Z</updated>
+  <updated>2019-07-08T14:52:39.190Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CVPR2017 | 旷视提出自然场景文本检测方法：EAST</title>
+    <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2017-%E6%97%B7%E8%A7%86%E6%8F%90%E5%87%BA%E8%87%AA%E7%84%B6%E5%9C%BA%E6%99%AF%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95%EF%BC%9AEAST/"/>
+    <id>https://zhaopeng0103.github.io/文本检测/CVPR2017-旷视提出自然场景文本检测方法：EAST/</id>
+    <published>2019-07-08T05:09:59.000Z</published>
+    <updated>2019-07-08T14:52:39.190Z</updated>
+    
+    <summary type="html">
+    
+      本文提出了由全卷积网络（FCN）和非极大值抑制（NMS）两个阶段组成的场景文本检测方法，可以直接预测图像中任意方向与四边形形状的单词或文本行，消除了如候选区域聚合、文本分割等冗余过程，减少了检测时间。优点是可以检测不同方向的文本块；缺点是由于感受野不够长，对长文本的检测效果不好。
+    
+    </summary>
+    
+      <category term="文本检测" scheme="https://zhaopeng0103.github.io/categories/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
+    
+    
+      <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
+    
+      <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
+    
+      <category term="CVPR2017" scheme="https://zhaopeng0103.github.io/tags/CVPR2017/"/>
+    
+      <category term="多方向文本" scheme="https://zhaopeng0103.github.io/tags/%E5%A4%9A%E6%96%B9%E5%90%91%E6%96%87%E6%9C%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>未知2018 | 北理、旷视、北大联合提出PAN，用于语义分割</title>
@@ -158,9 +184,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="PMTD" scheme="https://zhaopeng0103.github.io/tags/PMTD/"/>
-    
       <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
+    
+      <category term="PMTD" scheme="https://zhaopeng0103.github.io/tags/PMTD/"/>
     
       <category term="商汤" scheme="https://zhaopeng0103.github.io/tags/%E5%95%86%E6%B1%A4/"/>
     
@@ -186,9 +212,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
-    
       <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
+    
+      <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
     
       <category term="TextSnake" scheme="https://zhaopeng0103.github.io/tags/TextSnake/"/>
     
@@ -214,13 +240,13 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
-    
-      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
-    
       <category term="CRAFT" scheme="https://zhaopeng0103.github.io/tags/CRAFT/"/>
     
+      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
+    
       <category term="NAVER" scheme="https://zhaopeng0103.github.io/tags/NAVER/"/>
+    
+      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
     
   </entry>
   
@@ -294,11 +320,11 @@
     
       <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
     
+      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
+    
       <category term="PSENet" scheme="https://zhaopeng0103.github.io/tags/PSENet/"/>
     
       <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
-    
-      <category term="曲线文本" scheme="https://zhaopeng0103.github.io/tags/%E6%9B%B2%E7%BA%BF%E6%96%87%E6%9C%AC/"/>
     
   </entry>
   
@@ -461,26 +487,6 @@
     
     
       <category term="NMS" scheme="https://zhaopeng0103.github.io/tags/NMS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>交并比IOU(Intersection over Union)</title>
-    <link href="https://zhaopeng0103.github.io/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/%E4%BA%A4%E5%B9%B6%E6%AF%94IOU-Intersection-over-Union/"/>
-    <id>https://zhaopeng0103.github.io/目标检测与定位/交并比IOU-Intersection-over-Union/</id>
-    <published>2018-11-25T12:46:17.000Z</published>
-    <updated>2018-11-25T13:58:14.455Z</updated>
-    
-    <summary type="html">
-    
-      IOU指两个矩形框面积的交集和并集的比值，它是一个在特定数据集中检测相应物体准确度的测量标准。
-    
-    </summary>
-    
-      <category term="目标检测与定位" scheme="https://zhaopeng0103.github.io/categories/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/"/>
-    
-    
-      <category term="IOU" scheme="https://zhaopeng0103.github.io/tags/IOU/"/>
     
   </entry>
   
