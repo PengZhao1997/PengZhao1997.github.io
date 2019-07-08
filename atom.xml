@@ -110,9 +110,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="四边形文本" scheme="https://zhaopeng0103.github.io/tags/%E5%9B%9B%E8%BE%B9%E5%BD%A2%E6%96%87%E6%9C%AC/"/>
-    
       <category term="旷视" scheme="https://zhaopeng0103.github.io/tags/%E6%97%B7%E8%A7%86/"/>
+    
+      <category term="四边形文本" scheme="https://zhaopeng0103.github.io/tags/%E5%9B%9B%E8%BE%B9%E5%BD%A2%E6%96%87%E6%9C%AC/"/>
     
       <category term="角点定位与区域分割" scheme="https://zhaopeng0103.github.io/tags/%E8%A7%92%E7%82%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%8C%BA%E5%9F%9F%E5%88%86%E5%89%B2/"/>
     
@@ -158,9 +158,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="PMTD" scheme="https://zhaopeng0103.github.io/tags/PMTD/"/>
-    
       <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
+    
+      <category term="PMTD" scheme="https://zhaopeng0103.github.io/tags/PMTD/"/>
     
       <category term="商汤" scheme="https://zhaopeng0103.github.io/tags/%E5%95%86%E6%B1%A4/"/>
     
@@ -214,9 +214,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
-    
       <category term="CRAFT" scheme="https://zhaopeng0103.github.io/tags/CRAFT/"/>
+    
+      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
     
       <category term="NAVER" scheme="https://zhaopeng0103.github.io/tags/NAVER/"/>
     
@@ -229,7 +229,7 @@
     <link href="https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/CVPR2019-%E7%99%BE%E5%BA%A6%E6%8F%90%E5%87%BALOMO%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95/"/>
     <id>https://zhaopeng0103.github.io/文本检测/CVPR2019-百度提出LOMO文本检测算法/</id>
     <published>2019-05-15T04:15:26.000Z</published>
-    <updated>2019-07-08T01:46:12.499Z</updated>
+    <updated>2019-07-08T01:58:21.322Z</updated>
     
     <summary type="html">
     
