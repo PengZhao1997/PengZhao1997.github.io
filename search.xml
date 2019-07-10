@@ -106,8 +106,8 @@
       </categories>
       <tags>
         <tag>文本检测</tag>
-        <tag>CVPR2019</tag>
         <tag>PMTD</tag>
+        <tag>CVPR2019</tag>
         <tag>商汤</tag>
         <tag>四边形文本</tag>
       </tags>
@@ -136,8 +136,8 @@
       </categories>
       <tags>
         <tag>文本检测</tag>
-        <tag>CRAFT</tag>
         <tag>CVPR2019</tag>
+        <tag>CRAFT</tag>
         <tag>NAVER</tag>
         <tag>曲线文本</tag>
       </tags>
@@ -298,7 +298,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-MTbcgjJH"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-MQICWWcc"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
@@ -366,14 +366,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[关于我]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[关于我 我叫赵鹏 男 石家庄人 现居北京 学生 联系我 Email：424107420@qq.com GitHub：zhaopeng0103 WeChat：zp18713598785 QQ：424107420]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
     <title><![CDATA[标签云]]></title>
