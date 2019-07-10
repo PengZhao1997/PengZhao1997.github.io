@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/AAAI2019-%E6%97%B7%E8%A7%86%E6%8F%90%E5%87%BA%E4%BB%BB%E6%84%8F%E5%BD%A2%E7%8A%B6%E7%9A%84%E5%9C%BA%E6%99%AF%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95%EF%BC%9ASPCNet/</loc>
-    <lastmod>2019-07-10T04:38:12.305Z</lastmod>
+    <lastmod>2019-07-10T04:51:41.305Z</lastmod>
     <data>
         <display>
         <title>AAAI2019 | 旷视提出任意形状的场景文本检测方法：SPCNet</title>
@@ -285,9 +285,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>旷视</tag>
-         
         <tag>四边形文本</tag>
+         
+        <tag>旷视</tag>
          
         <tag>角点定位与区域分割</tag>
          
