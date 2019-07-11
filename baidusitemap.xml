@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/WACV2018-%E5%BE%AE%E8%BD%AF%E4%BA%9A%E7%A0%94%E9%99%A2%E6%8F%90%E5%87%BA%E5%B8%A6PAN%E7%9A%84%E5%9F%BA%E4%BA%8EMask-R-CNN%E7%9A%84%E5%9C%BA%E6%99%AF%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2019-07-11T06:48:57.543Z</lastmod>
+    <lastmod>2019-07-11T07:13:16.288Z</lastmod>
     <data>
         <display>
         <title>WACV2018 | 微软亚研院提出带PAN的基于Mask R-CNN的场景文本检测方法</title>
@@ -43,9 +43,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>旷视</tag>
-         
         <tag>曲线文本</tag>
+         
+        <tag>旷视</tag>
          
         <tag>Mask R-CNN</tag>
          
@@ -99,9 +99,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>旷视</tag>
-         
         <tag>曲线文本</tag>
+         
+        <tag>旷视</tag>
          
         <tag>TextSnake</tag>
          
@@ -229,13 +229,13 @@
         
         <tag>文本检测</tag>
          
-        <tag>PSENet</tag>
-         
         <tag>CVPR2019</tag>
          
-        <tag>旷视</tag>
-         
         <tag>曲线文本</tag>
+         
+        <tag>PSENet</tag>
+         
+        <tag>旷视</tag>
          
          
            
@@ -257,13 +257,13 @@
         
         <tag>文本检测</tag>
          
-        <tag>CVPR2019</tag>
-         
-        <tag>曲线文本</tag>
-         
         <tag>CRAFT</tag>
          
+        <tag>CVPR2019</tag>
+         
         <tag>NAVER</tag>
+         
+        <tag>曲线文本</tag>
          
          
            
@@ -285,9 +285,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>旷视</tag>
-         
         <tag>四边形文本</tag>
+         
+        <tag>旷视</tag>
          
         <tag>角点定位与区域分割</tag>
          
