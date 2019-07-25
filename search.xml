@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[YOLOV3模型训练策略]]></title>
+    <url>%2F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D%2FYOLOV3%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E7%AD%96%E7%95%A5%2F</url>
+    <content type="text"><![CDATA[模型训练策略（YOLOV3） multi_scale_train = True # 是否使用多尺度训练策略。图像的尺寸默认在[320, 320]到[640, 640]之间变化。 use_label_smooth = True # 是否使用类标签平滑策略。 use_focal_loss = True # 是否在conf loss上使用focal loss。 use_mix_up = True # 是否使用混合型的数据增强策略。 use_warm_up = True # 是否使用预热策略去避免梯度爆炸。 warm_up_epoch = 3 # 预热训练的次数。如果梯度爆炸，设置为一个更大的值。 Some training tricks（YOLOV3） 使用two-stage训练策略或者one-stage训练策略：（1）Two-stage训练策略： First stage: Restore darknet53_body part weights from COCO checkpoints, train the yolov3_head with big learning rate like 1e-3 until the loss reaches to a low level. Second stage: Restore the weights from the first stage, then train the whole model with small learning rate like 1e-4 or smaller. At this stage remember to restore the optimizer parameters if you use optimizers like adam.（2）One-stage训练策略： Just restore the whole weight file except the last three convolution layers (Conv_6, Conv_14, Conv_22). In this condition, be careful about the possible nan loss value. 加入一些其它有用的训练策略： Cosine decay of lr (SGDR)：学习率余弦衰减 Multi-scale training：多尺度训练 Label smoothing：标签平滑 Mix up data augmentation：混合数据增强 Focal loss：焦点损失 这些都是好的训练策略，但是并不意味着它们肯定会提升性能。对于自己的任务应选择合适的策略。 Loss nan? 设置一个更大的预热epoch数量或者更小的学习率，并多次尝试。如果fine-tune整个模型的话，使用adam优化器有时会造成nan。可以尝试选择momentum优化器。]]></content>
+      <categories>
+        <category>目标检测与定位</category>
+      </categories>
+      <tags>
+        <tag>tricks</tag>
+        <tag>YOLOV3</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[AAAI2019 | 旷视提出任意形状的场景文本检测方法：SPCNet]]></title>
     <url>%2F%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%2FAAAI2019-%E6%97%B7%E8%A7%86%E6%8F%90%E5%87%BA%E4%BB%BB%E6%84%8F%E5%BD%A2%E7%8A%B6%E7%9A%84%E5%9C%BA%E6%99%AF%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95%EF%BC%9ASPCNet%2F</url>
     <content type="text"><![CDATA[Scene Text Detection with Supervised Pyramid Context NetworkKeyWords Plus: AAAI2019 Curved Textpaper：https://arxiv.org/abs/1811.08605reference: Xie E, Zang Y, Shao S, et al. Scene text detection with supervised pyramid context network[J]. arXiv preprint arXiv:1811.08605, 2018.Github: 未开源 引言 基于深度学习的场景文本检测方法在过去几年取得了显著成效。然而，由于自然场景的高度多样性和复杂性，当应用于在现实世界环境中捕获的图像时，目前最先进的文本检测方法仍可能产生大量假阳性结果。为了解决这个问题，作者受到Mask R-CNN的启发，文中提出了一种有效的场景文本检测模型，该模型基于特征金字塔网络（FPN）和实例分割。作者提出了一个监督金字塔上下文网络（SPCNET）来精确定位文本区域，同时抑制假阳性。 受益于语义信息的指导和共享FPN，SPCNET在引入边界额外计算的同时获得了显著提高的性能。标准数据集上的实验表明，我们的SPCNET明显优于最先进的方法。具体而言，ICDAR2013上达到92.1％，ICDAR2015为87.2％，ICDAR2017 MLT为74.1％，Total-Text上达到82.9％。 内容 为了检测任意形状的文本，通常采用基于实例分割的方法。目前实例分割方法，例如Mask R-CNN，通常被利用为多任务学习问题：（1）将前景目标建议与背景区分开，并为它们分配适当的类标签。（2）对每个前景建议进行回归和分割。 然而，简单地将Mask-RCNN转移到文本检测场景容易引起一些问题，原因如下：（1）缺乏上下文信息线索。自然场景中的假阳性往往与周围场景密切相关。例如，餐具经常出现在桌子上，并且围栏通常分批出现。然而，Mask R-CNN在一个感兴趣的区域中区分对象，缺少全局语义信息指导。因此，在没有上下文信息线索帮助的情况下，它往往会导致一些具有相似纹理信息的对象的分类错误。（2）分类评分不准确。在处理倾斜文本时，Mask R-CNN的分类分数很容易不准确。因为对于倾斜文本，Mask R-CNN基于水平建议粗略地给出分类分数，而背景占据很大比例。因此，当面对倾斜文本时，Mask R-CNN的分类得分往往较低。 本文在Mask R-CNN 的启发下，提出了一种基于语义信息的形状鲁棒的文本检测器，利用生成目标的形状分支的输出来定位文本区域。因此可以灵活地检测任意形状的文本。 为了解决FP上缺乏上下文信息线索和分类评分不准确的问题，作者提出了一个文本上下模块和重新评分机制（基于mask R-CNN）。对于上下文信息，用语义分割分支来辅助指导检测分支捕获上下文信息。通过对全局语义的特征的弥补，网络更好的区分了误报情况。 在评分机制上，对分割图上的激活值和分类评分进行补偿，得到一个融合的分数，在处理倾斜的文本时，虽然分数相对较低，但对分割图的响应较强，这也使得准确的融合得分较高重评分机制可以进一步减少FP的数量。这是因为FP在分割图上的响应很弱，导致融合分数较低。因此，分数较低的得分在推理过程中更容易被过滤掉。重评分机制的可视化结果如图1。 标签生成 文本实例的真值在图3中举例说明。与常见的实例分割数据集不同，不提供像素级文本/非文本标注。将多边形中的像素视为文本，多边形外的像素视为非文本，然后得到文本区域的实例。多边形的最小边界水平矩形将被视为边界框。以与实例生成相同的方式生成全局二值映射。 提出的方法 文章提出的方法的总体结构如图2所示。网络由五部分组成：特征金字塔网络（FPN），区域提议网络（RPN），R-CNN分支，掩模预测分支和全局文本分割预测分支。特征金字塔网络（FPN）是一种广泛应用于当前主流检测模型的特征融合结构。FPN采用自上而下的横向连接架构，从单一尺度输入构建网络内的特征金字塔。区域建议网络（RPN）生成可能包含目标建议的边界框。通过Roi-Align，所有建议的大小调整为R-CNN分支的7×7和掩模预测分支的14×14。全局文本分割分支作用于FPN的每个阶段以生成文本的语义分割图。 Text Context Module 抑制假阳性对于一般目标检测和文本检测来说是一个具有挑战性的问题。 在自然场景中，一些常规目标，例如光盘、栅栏等，很容易被检测网络视为文本。Mask R-CNN使用感兴趣区域（ROI）来分类建议是文本还是背景。然而，使用仅从一个感兴趣区域提取的特征来执行文本区域分类。由于自然场景中的误报通常不会出现意外，例如光盘更有可能出现在桌面上，引入上下文信息有助于网络提取更多的辨别功能并准确地对建议进行分类。此文的文本上下文模块（TCM）由两个子模块组成：金字塔注意模块（PAM）和金字塔融合模块（PFM）。像素图被输入TCM，TCM将文本分割结果作为输出。 Pyramid Attention Module 金字塔注意模块和SSTD相似，还在FPN从stage2到stage5之后添加了一个全局文本分割分支。它为每个FPN层生成像素级文本/非文本区域的显著图。注意模块和融合模块共享一个分支，命名为文本上下文模块，包括两个3×3卷积层和一个1×1卷积层。输出显著图包括两个通道，即文本/非文本图。 增强显著图并使用它来激活像素图上的文本区域。具体来说，以stage2为例，给出512×512的输入样本，特征映射S2∈R128×128×256。显著图的生成如下： 其中Text Context模块生成具有2个通道的显著图。然后在通道方面softmax之后，我们获得文本显著图。通过指数激活，增强图显著增强，即文本/非文本区域中的响应间隙变大。显著图将作用于特征图，如下所示： 显著性映射广播到与S2相同的256通道，操作符表示两个映射S2和显著性映射的逐像素相乘运算。 Pyramid Fusion Module 金字塔融合模块。PFM将检测特征与深度监督语义特征相结合，使网络更具辨别力，区分文本和非文本。具体而言，语义分割从单个像素的角度检查文本，并通过组合周围像素的信息来确定文本区域， 检测通过ROI对文本区域进行分类。两个分支之间存在天然的互补关系。在文本上下文模块的第一个3×3卷积层之后，得到全局文本分割的特征映射（GTF）。这些特征捕获了诸如背景和文本的语义分割等补充信息。将其引入原始特征图使得Mask R-CNN在分类任务上表现更强。具体细节如下： 其中Conv3×3是文本上下文模块中的第一个Conv层，GTF表示全局文本特征。然后“+”表示元素加法运算。 Re-Score Mechanism 对于标准Mask R-CNN推理处理，预先确定的top-K（例如，1000）边界框按分类置信度排序，然后在标准NMS处理之后，最多到顶部M（例如，300）边界框具有最高 保留分类置信度。这些边界框被馈送到Mask R-CNN作为生成预测文本实例映射的建议。此方法将一个水平边界框的分类置信度视为分数，然后人为设置阈值以过滤掉背景框。但是，此方法将过滤掉一些具有低分数的正积极像素，因为如果水平边界框包含倾斜文本实例，则它还伴随着大量背景信息。同时，将保留一些置信度相对较高的FP，我们为每个文本实例重新分配得分。可视化图如图4所示。文本实例的融合得分由两部分组成：分类得分（CS）和实例得分（IS）。形式上，给定预测的2级得分 的第i个建议的融合得分是通过以下softmax函数计算的： 其中CS由Mask R-CNN分类分支直接获得，IS是全局文本分割图上文本实例的激活值。具体来说，对于每个文本实例，它被投影到文本分割图上，包含 ，并计算文本实例区域中pi的均值： 其中Pi是文本分割图上第i个文本实例的像素值集。融合得分将分类得分与实例得分相结合，这可以有效地降低FP置信度，因为FP实例往往比分割图上的文本具有更弱的响应。 Loss Function Design 与Mask R-CNN类似，网络包括多任务。在Mask R-CNN的loss函数设计之后，在此基础上添加了全局文本分割loss。loss表达式如下： 其中Lrpn，Lcls，Lbox和Lmask是Mask R-CNN的标准损失。Lgts用于优化全局文本分割，定义如下： Lgts是Softmax损失，其中p是网络的输出预测。 多任务学习是从同一输入中学习多个互补任务的有效表示的过程，并且已经发现它可以改善两个任务的性能。该方法使网络能够通过端到端交叉训练来学习文本检测和全局文本分割，从而允许来自两个任务的梯度影响共享特征图。 实验消融学习 在ICDAR2017上的效果：文本上下文模块在保持召回相同的同时实现了4.1％的精度提高，重评分机制可以进一步提高基于TCM的3.9％的精度。 与现有方法的对比 在icdar17,15,13和total-text(多语言，多方向，水平文本，弯曲文本)上都是state-of-the-art，充分证明了该方法的有效性。 在ICDAR2015上对比一些经典方法的FP情况，可以看到我们的方法可以有效抑制FP。]]></content>
@@ -298,7 +310,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-bxYdDJkZ"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-wMKlwqiT"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
@@ -366,11 +378,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关于我]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[关于我 我叫赵鹏 男 石家庄人 现居北京 学生 联系我 Email：424107420@qq.com GitHub：zhaopeng0103 WeChat：zp18713598785 QQ：424107420]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
@@ -379,5 +386,10 @@
     <title><![CDATA[标签云]]></title>
     <url>%2Ftags%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[关于我]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[关于我 我叫赵鹏 男 石家庄人 现居北京 学生 联系我 Email：424107420@qq.com GitHub：zhaopeng0103 WeChat：zp18713598785 QQ：424107420]]></content>
   </entry>
 </search>
