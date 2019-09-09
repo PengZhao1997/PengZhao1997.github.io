@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-07-25T06:57:18.967Z</updated>
+  <updated>2019-09-09T02:09:07.201Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Awesome Word Spotting: A curated list of resources for word spotting</title>
+    <link href="https://zhaopeng0103.github.io/default/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/"/>
+    <id>https://zhaopeng0103.github.io/default/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/</id>
+    <published>2019-09-09T02:09:07.000Z</published>
+    <updated>2019-09-09T02:09:07.201Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>YOLOV3模型训练策略</title>
@@ -479,26 +501,6 @@
     
     
       <category term="MSER" scheme="https://zhaopeng0103.github.io/tags/MSER/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>贪心算法_最小差距</title>
-    <link href="https://zhaopeng0103.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E6%9C%80%E5%B0%8F%E5%B7%AE%E8%B7%9D/"/>
-    <id>https://zhaopeng0103.github.io/算法题/贪心算法-最小差距/</id>
-    <published>2018-12-01T17:29:01.000Z</published>
-    <updated>2018-12-01T18:27:14.205Z</updated>
-    
-    <summary type="html">
-    
-      给定一些不同的一位数字，你可以从这些数字中选择若干个，并将它们按一定顺序排列，组成一个整数，把剩下的数字按一定顺序排列，组成另一个整数。组成的整数不能以0开头（除非这个整数只有1位）。例如，给定6个数字，0,1,2,4,6,7，你可以用它们组成一对数10和2467，当然，还可以组成其他的很多对数，比如210和764，204和176。这些对数中两个数差的绝对值最小的是204和176，为28。给定N个不同的0-9之间的数字，请你求出用这些数字组成的每对数中，差的绝对值最小的一对（或多对）数的绝对值是多少？
-    
-    </summary>
-    
-      <category term="算法题" scheme="https://zhaopeng0103.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
-    
-    
-      <category term="贪心" scheme="https://zhaopeng0103.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
