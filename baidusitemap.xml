@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/Word-Spotting/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/</loc>
-    <lastmod>2019-09-09T06:50:51.056Z</lastmod>
+    <lastmod>2019-09-09T08:19:54.072Z</lastmod>
     <data>
         <display>
         <title>Awesome Word Spotting: A curated list of resources for word spotting</title>
@@ -243,9 +243,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>PMTD</tag>
-         
         <tag>CVPR2019</tag>
+         
+        <tag>PMTD</tag>
          
         <tag>商汤</tag>
          
@@ -299,9 +299,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>CVPR2019</tag>
-         
         <tag>CRAFT</tag>
+         
+        <tag>CVPR2019</tag>
          
         <tag>NAVER</tag>
          

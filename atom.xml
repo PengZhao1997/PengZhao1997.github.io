@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-09-09T06:50:51.056Z</updated>
+  <updated>2019-09-09T08:19:54.072Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhaopeng0103.github.io/Word-Spotting/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/"/>
     <id>https://zhaopeng0103.github.io/Word-Spotting/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/</id>
     <published>2019-09-09T02:09:07.000Z</published>
-    <updated>2019-09-09T06:50:51.056Z</updated>
+    <updated>2019-09-09T08:19:54.072Z</updated>
     
     <summary type="html">
     
@@ -256,9 +256,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="PMTD" scheme="https://zhaopeng0103.github.io/tags/PMTD/"/>
-    
       <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
+    
+      <category term="PMTD" scheme="https://zhaopeng0103.github.io/tags/PMTD/"/>
     
       <category term="商汤" scheme="https://zhaopeng0103.github.io/tags/%E5%95%86%E6%B1%A4/"/>
     
@@ -312,9 +312,9 @@
     
       <category term="文本检测" scheme="https://zhaopeng0103.github.io/tags/%E6%96%87%E6%9C%AC%E6%A3%80%E6%B5%8B/"/>
     
-      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
-    
       <category term="CRAFT" scheme="https://zhaopeng0103.github.io/tags/CRAFT/"/>
+    
+      <category term="CVPR2019" scheme="https://zhaopeng0103.github.io/tags/CVPR2019/"/>
     
       <category term="NAVER" scheme="https://zhaopeng0103.github.io/tags/NAVER/"/>
     
