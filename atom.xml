@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-09-09T02:09:07.201Z</updated>
+  <updated>2019-09-09T02:46:44.617Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhaopeng0103.github.io/default/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/"/>
     <id>https://zhaopeng0103.github.io/default/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/</id>
     <published>2019-09-09T02:09:07.000Z</published>
-    <updated>2019-09-09T02:09:07.201Z</updated>
+    <updated>2019-09-09T02:46:44.617Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,8 @@
     
     </summary>
     
+    
+      <category term="Word Spotting" scheme="https://zhaopeng0103.github.io/tags/Word-Spotting/"/>
     
   </entry>
   
