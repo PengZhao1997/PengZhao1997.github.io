@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/default/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/</loc>
-    <lastmod>2019-09-09T03:20:56.395Z</lastmod>
+    <lastmod>2019-09-09T06:40:23.540Z</lastmod>
     <data>
         <display>
         <title>Awesome Word Spotting: A curated list of resources for word spotting</title>
@@ -324,9 +324,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>旷视</tag>
-         
         <tag>四边形文本</tag>
+         
+        <tag>旷视</tag>
          
         <tag>角点定位与区域分割</tag>
          
