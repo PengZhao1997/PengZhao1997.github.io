@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/Word-Spotting/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/</loc>
-    <lastmod>2019-09-09T08:19:54.072Z</lastmod>
+    <lastmod>2019-09-11T07:10:27.027Z</lastmod>
     <data>
         <display>
         <title>Awesome Word Spotting: A curated list of resources for word spotting</title>
@@ -85,9 +85,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>曲线文本</tag>
-         
         <tag>旷视</tag>
+         
+        <tag>曲线文本</tag>
          
         <tag>Mask R-CNN</tag>
          
@@ -141,9 +141,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>曲线文本</tag>
-         
         <tag>旷视</tag>
+         
+        <tag>曲线文本</tag>
          
         <tag>TextSnake</tag>
          
@@ -243,9 +243,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>CVPR2019</tag>
-         
         <tag>PMTD</tag>
+         
+        <tag>CVPR2019</tag>
          
         <tag>商汤</tag>
          
@@ -273,11 +273,11 @@
          
         <tag>CVPR2019</tag>
          
-        <tag>曲线文本</tag>
-         
         <tag>PSENet</tag>
          
         <tag>旷视</tag>
+         
+        <tag>曲线文本</tag>
          
          
            
@@ -299,13 +299,13 @@
         
         <tag>文本检测</tag>
          
-        <tag>CRAFT</tag>
-         
         <tag>CVPR2019</tag>
          
-        <tag>NAVER</tag>
-         
         <tag>曲线文本</tag>
+         
+        <tag>CRAFT</tag>
+         
+        <tag>NAVER</tag>
          
          
            
