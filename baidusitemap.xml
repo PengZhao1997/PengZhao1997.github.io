@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/Word-Spotting/Awesome-Word-Spotting-A-curated-list-of-resources-for-word-spotting/</loc>
-    <lastmod>2019-09-12T08:19:59.194Z</lastmod>
+    <lastmod>2019-09-12T09:29:02.637Z</lastmod>
     <data>
         <display>
         <title>Awesome Word Spotting: A curated list of resources for word spotting</title>
@@ -87,9 +87,9 @@
          
         <tag>曲线文本</tag>
          
-        <tag>Mask R-CNN</tag>
-         
         <tag>旷视</tag>
+         
+        <tag>Mask R-CNN</tag>
          
         <tag>SPCNet</tag>
          
@@ -195,9 +195,9 @@
         <title>未知2018 | 北理、旷视、北大联合提出PAN，用于语义分割</title>
         <pubTime>2019-07-05T11:30:57.000Z</pubTime>
         
-        <tag>PAN</tag>
-         
         <tag>旷视</tag>
+         
+        <tag>PAN</tag>
          
         <tag>语义分割</tag>
          
@@ -327,9 +327,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>四边形文本</tag>
-         
         <tag>旷视</tag>
+         
+        <tag>四边形文本</tag>
          
         <tag>角点定位与区域分割</tag>
          
