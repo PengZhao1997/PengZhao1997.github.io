@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaopeng0103.github.io/"/>
-  <updated>2019-09-12T09:29:02.637Z</updated>
+  <updated>2019-09-17T07:48:39.563Z</updated>
   <id>https://zhaopeng0103.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pytorch的19种损失函数</title>
+    <link href="https://zhaopeng0103.github.io/Pytorch%E5%AD%A6%E4%B9%A0/Pytorch%E7%9A%8419%E7%A7%8D%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/"/>
+    <id>https://zhaopeng0103.github.io/Pytorch学习/Pytorch的19种损失函数/</id>
+    <published>2019-09-17T06:48:16.000Z</published>
+    <updated>2019-09-17T07:48:39.563Z</updated>
+    
+    <summary type="html">
+    
+      Pytorch的19种损失函数
+    
+    </summary>
+    
+      <category term="Pytorch学习" scheme="https://zhaopeng0103.github.io/categories/Pytorch%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="LOSS" scheme="https://zhaopeng0103.github.io/tags/LOSS/"/>
+    
+      <category term="Pytorch" scheme="https://zhaopeng0103.github.io/tags/Pytorch/"/>
+    
+  </entry>
   
   <entry>
     <title>Awesome Word Spotting: A curated list of resources for word spotting</title>
@@ -479,26 +501,6 @@
     
     
       <category term="贪心" scheme="https://zhaopeng0103.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最大稳定极值区域MSER-Maximally Stable Extrernal Regions</title>
-    <link href="https://zhaopeng0103.github.io/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/%E6%9C%80%E5%A4%A7%E7%A8%B3%E5%AE%9A%E6%9E%81%E5%80%BC%E5%8C%BA%E5%9F%9FMSER-Maximally-Stable-Extrernal-Regions/"/>
-    <id>https://zhaopeng0103.github.io/目标检测与定位/最大稳定极值区域MSER-Maximally-Stable-Extrernal-Regions/</id>
-    <published>2018-12-01T17:30:47.000Z</published>
-    <updated>2018-12-01T18:29:21.598Z</updated>
-    
-    <summary type="html">
-    
-      MSER（Maximally Stable Extrernal Regions）是区域检测中影响最大的算法。
-    
-    </summary>
-    
-      <category term="目标检测与定位" scheme="https://zhaopeng0103.github.io/categories/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/"/>
-    
-    
-      <category term="MSER" scheme="https://zhaopeng0103.github.io/tags/MSER/"/>
     
   </entry>
   
