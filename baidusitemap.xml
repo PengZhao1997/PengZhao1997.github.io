@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://zhaopeng0103.github.io/Pytorch%E5%AD%A6%E4%B9%A0/Pytorch%E7%9A%8419%E7%A7%8D%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2019-09-17T07:48:39.563Z</lastmod>
+    <lastmod>2019-09-17T08:12:44.409Z</lastmod>
     <data>
         <display>
         <title>Pytorch的19种损失函数</title>
@@ -349,9 +349,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>旷视</tag>
-         
         <tag>四边形文本</tag>
+         
+        <tag>旷视</tag>
          
         <tag>角点定位与区域分割</tag>
          
