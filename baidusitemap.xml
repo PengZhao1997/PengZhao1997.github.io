@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>https://zhaopeng0103.github.io/Pytorch%E5%AD%A6%E4%B9%A0/Pytorch%E7%9A%8419%E7%A7%8D%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2019-09-17T08:12:44.409Z</lastmod>
@@ -107,9 +108,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>曲线文本</tag>
-         
         <tag>旷视</tag>
+         
+        <tag>曲线文本</tag>
          
         <tag>Mask R-CNN</tag>
          
@@ -163,9 +164,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>曲线文本</tag>
-         
         <tag>旷视</tag>
+         
+        <tag>曲线文本</tag>
          
         <tag>TextSnake</tag>
          
@@ -293,13 +294,13 @@
         
         <tag>文本检测</tag>
          
-        <tag>CVPR2019</tag>
-         
-        <tag>曲线文本</tag>
-         
         <tag>PSENet</tag>
          
+        <tag>CVPR2019</tag>
+         
         <tag>旷视</tag>
+         
+        <tag>曲线文本</tag>
          
          
            
@@ -321,13 +322,13 @@
         
         <tag>文本检测</tag>
          
-        <tag>CRAFT</tag>
-         
         <tag>CVPR2019</tag>
          
-        <tag>NAVER</tag>
-         
         <tag>曲线文本</tag>
+         
+        <tag>CRAFT</tag>
+         
+        <tag>NAVER</tag>
          
          
            
@@ -349,9 +350,9 @@
         
         <tag>文本检测</tag>
          
-        <tag>四边形文本</tag>
-         
         <tag>旷视</tag>
+         
+        <tag>四边形文本</tag>
          
         <tag>角点定位与区域分割</tag>
          
@@ -386,6 +387,10 @@
     </data>
     </url>
 
+    
+    
+    
+    
     
   <url>
     <loc>https://zhaopeng0103.github.io/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/%E9%9D%9E%E6%9E%81%E5%A4%A7%E5%80%BC%E6%8A%91%E5%88%B6NMS-Non-Maximum-Suppression/</loc>
@@ -619,9 +624,9 @@
         <title>程序设计竞赛:约瑟夫环plus</title>
         <pubTime>2018-11-15T11:52:30.000Z</pubTime>
         
-        <tag>模拟</tag>
-         
         <tag>程序设计竞赛</tag>
+         
+        <tag>模拟</tag>
          
          
            
@@ -641,9 +646,9 @@
         <title>程序设计竞赛:讨厌的数字</title>
         <pubTime>2018-11-15T12:10:09.000Z</pubTime>
         
-        <tag>程序设计竞赛</tag>
-         
         <tag>动态规划dp</tag>
+         
+        <tag>程序设计竞赛</tag>
          
          
            
@@ -663,9 +668,9 @@
         <title>程序设计竞赛:五子棋</title>
         <pubTime>2018-11-15T12:13:00.000Z</pubTime>
         
-        <tag>模拟</tag>
-         
         <tag>程序设计竞赛</tag>
+         
+        <tag>模拟</tag>
          
          
            
@@ -705,9 +710,9 @@
         <title>程序设计竞赛:魔法师排队</title>
         <pubTime>2018-11-15T10:37:03.000Z</pubTime>
         
-        <tag>模拟</tag>
-         
         <tag>程序设计竞赛</tag>
+         
+        <tag>模拟</tag>
          
          
            
