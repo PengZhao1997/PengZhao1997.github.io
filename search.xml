@@ -44,8 +44,8 @@
       </categories>
       <tags>
         <tag>文本检测</tag>
-        <tag>旷视</tag>
         <tag>曲线文本</tag>
+        <tag>旷视</tag>
         <tag>Mask R-CNN</tag>
         <tag>SPCNet</tag>
         <tag>AAAI2019</tag>
@@ -115,8 +115,8 @@
       </categories>
       <tags>
         <tag>文本检测</tag>
-        <tag>旷视</tag>
         <tag>四边形文本</tag>
+        <tag>旷视</tag>
         <tag>角点定位与区域分割</tag>
         <tag>CVPR2018</tag>
       </tags>
@@ -156,8 +156,8 @@
       </categories>
       <tags>
         <tag>文本检测</tag>
-        <tag>旷视</tag>
         <tag>曲线文本</tag>
+        <tag>旷视</tag>
         <tag>TextSnake</tag>
         <tag>ECCV2018</tag>
       </tags>
@@ -171,10 +171,10 @@
       </categories>
       <tags>
         <tag>文本检测</tag>
-        <tag>CVPR2019</tag>
-        <tag>曲线文本</tag>
         <tag>CRAFT</tag>
+        <tag>CVPR2019</tag>
         <tag>NAVER</tag>
+        <tag>曲线文本</tag>
       </tags>
   </entry>
   <entry>
@@ -213,10 +213,10 @@
       </categories>
       <tags>
         <tag>文本检测</tag>
-        <tag>PSENet</tag>
         <tag>CVPR2019</tag>
-        <tag>旷视</tag>
         <tag>曲线文本</tag>
+        <tag>PSENet</tag>
+        <tag>旷视</tag>
       </tags>
   </entry>
   <entry>
@@ -333,7 +333,7 @@
   <entry>
     <title><![CDATA[好听的歌曲]]></title>
     <url>%2Fmusic%2F%E5%A5%BD%E5%90%AC%E7%9A%84%E6%AD%8C%E6%9B%B2%2F</url>
-    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-tXjXeaEm"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","music":[{"title":"小白兔遇上卡布奇诺","author":"兔子牙","url":"/music/小白兔遇上卡布奇诺.mp3","pic":"/images/小白兔1.jpg","lrc":"/documents/小白兔.txt"}]}; options.element = document.getElementById("aplayer-bZOUUuRS"); var ap = new APlayer(options); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"/videos/小白兔.mp4","pic":"/images/小白兔.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>music</category>
       </categories>
@@ -349,8 +349,8 @@
         <category>算法题</category>
       </categories>
       <tags>
-        <tag>程序设计竞赛</tag>
         <tag>模拟</tag>
+        <tag>程序设计竞赛</tag>
       </tags>
   </entry>
   <entry>
@@ -361,8 +361,8 @@
         <category>算法题</category>
       </categories>
       <tags>
-        <tag>动态规划dp</tag>
         <tag>程序设计竞赛</tag>
+        <tag>动态规划dp</tag>
       </tags>
   </entry>
   <entry>
@@ -373,8 +373,8 @@
         <category>算法题</category>
       </categories>
       <tags>
-        <tag>程序设计竞赛</tag>
         <tag>模拟</tag>
+        <tag>程序设计竞赛</tag>
       </tags>
   </entry>
   <entry>
@@ -385,8 +385,8 @@
         <category>算法题</category>
       </categories>
       <tags>
-        <tag>程序设计竞赛</tag>
         <tag>模拟</tag>
+        <tag>程序设计竞赛</tag>
       </tags>
   </entry>
   <entry>
@@ -411,33 +411,8 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>%2Fconfession%2Findex.html</url>
-    <content type="text"><![CDATA[Please @font-face { font-family: digit; src: url('digital-7_mono.ttf') format("truetype"); } /** * 2018-07-17, we acquaintance * 2019-06-08, we meet * 2019-09-12, we fall in love */ Boy name = Silly dog Girl name = Fat pig // Fall in love river. The boy loves the girl; // They love each other. The girl loves the boy; // AS time goes on. The boy can not be separated the girl; // At the same time. The girl can not be separated the boy; // Both wind and snow all over the sky. // Whether on foot or 5 kilometers. The boy is very happy; The girl is also very happy; // Whether it is right now // Still in the distant future. The boy has but one dream; // The boy wants the girl could well have been happy. I want to say: Baby, I love you forever *^_^* 亲爱的，这是我们相爱在一起的时光。 爱你直到永永远远。 - 木头脑袋会开花 var offsetX = $("#loveHeart").width() / 2; var offsetY = $("#loveHeart").height() / 2 - 55; var together = new Date(); together.setFullYear(2019, 8, 12); together.setHours(21); together.setMinutes(0); together.setSeconds(0); together.setMilliseconds(0); if (!document.createElement('canvas').getContext) { var msg = document.createElement("div"); msg.id = "errorMsg"; msg.innerHTML = "Your browser doesn't support HTML5!Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; document.body.appendChild(msg); $("#code").css("display", "none") $("#copyright").css("position", "absolute"); $("#copyright").css("bottom", "10px"); document.execCommand("stop"); } else { setTimeout(function () { startHeartAnimation(); }, 5000); timeElapse(together); setInterval(function () { timeElapse(together); }, 500); adjustCodePosition(); $("#code").typewriter(); }]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[标签云]]></title>
     <url>%2Ftags%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2Fconfession%2Fcss%2Fdefault.css</url>
-    <content type="text"><![CDATA[body { margin: 0; padding: 0; background: #ffe; font-size: 12px; overflow: auto } #mainDiv { width: 100%; height: 100% } #loveHeart { float: left; width: 670px; height: 625px } #garden { width: 100%; height: 100% } #elapseClock { text-align: right; font-size: 18px; margin-top: 10px; margin-bottom: 10px } #words { font-family: "sans-serif"; width: 500px; font-size: 24px; color: #666 } #messages { display: none } #elapseClock .digit { font-family: "digit"; font-size: 36px } #loveu { padding: 5px; font-size: 22px; margin-top: 80px; margin-right: 120px; text-align: right; display: none } #loveu .signature { margin-top: 10px; font-size: 20px; font-style: italic } #clickSound { display: none } #code { float: left; width: 440px; height: 400px; color: #333; font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif"; font-size: 12px } #code .string { color: #2a36ff } #code .keyword { color: #7f0055; font-weight: bold } #code .placeholder { margin-left: 15px } #code .space { margin-left: 7px } #code .comments { color: #3f7f5f } #copyright { margin-top: 10px; text-align: center; width: 100%; color: #666 } #errorMsg { width: 100%; text-align: center; font-size: 24px; position: absolute; top: 100px; left: 0 } #copyright a { color: #666 }]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2Fconfession%2Fjs%2Ffunctions.js</url>
-    <content type="text"><![CDATA[var $window = $(window), gardenCtx, gardenCanvas, $garden, garden; var clientWidth = $(window).width(); var clientHeight = $(window).height(); $(function () { // setup garden $loveHeart = $("#loveHeart"); var offsetX = $loveHeart.width() / 2; var offsetY = $loveHeart.height() / 2 - 55; $garden = $("#garden"); gardenCanvas = $garden[0]; gardenCanvas.width = $("#loveHeart").width(); gardenCanvas.height = $("#loveHeart").height() gardenCtx = gardenCanvas.getContext("2d"); gardenCtx.globalCompositeOperation = "lighter"; garden = new Garden(gardenCtx, gardenCanvas); $("#content").css("width", $loveHeart.width() + $("#code").width()); $("#content").css("height", Math.max($loveHeart.height(), $("#code").height())); $("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10)); $("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10)); // renderLoop setInterval(function () { garden.render(); }, Garden.options.growSpeed); }); $(window).resize(function() { var newWidth = $(window).width(); var newHeight = $(window).height(); if (newWidth != clientWidth && newHeight != clientHeight) { location.replace(location); } }); function getHeartPoint(angle) { var t = angle / Math.PI; var x = 19.5 * (16 * Math.pow(Math.sin(t), 3)); var y = - 20 * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t)); return new Array(offsetX + x, offsetY + y); } function startHeartAnimation() { var interval = 50; var angle = 10; var heart = new Array(); var animationTimer = setInterval(function () { var bloom = getHeartPoint(angle); var draw = true; for (var i = 0; i < heart.length; i++) { var p = heart[i]; var distance = Math.sqrt(Math.pow(p[0] - bloom[0], 2) + Math.pow(p[1] - bloom[1], 2)); if (distance < Garden.options.bloomRadius.max * 1.3) { draw = false; break; } } if (draw) { heart.push(bloom); garden.createRandomBloom(bloom[0], bloom[1]); } if (angle >= 30) { clearInterval(animationTimer); showMessages(); } else { angle += 0.2; } }, interval); } (function($) { $.fn.typewriter = function() { this.each(function() { var $ele = $(this), str = $ele.html(), progress = 0; $ele.html(''); var timer = setInterval(function() { var current = str.substr(progress, 1); if (current == ']]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2Fconfession%2Fjs%2Fgarden.js</url>
-    <content type="text"><![CDATA[function Vector(x, y) { this.x = x; this.y = y; }; Vector.prototype = { rotate: function (theta) { var x = this.x; var y = this.y; this.x = Math.cos(theta) * x - Math.sin(theta) * y; this.y = Math.sin(theta) * x + Math.cos(theta) * y; return this; }, mult: function (f) { this.x *= f; this.y *= f; return this; }, clone: function () { return new Vector(this.x, this.y); }, length: function () { return Math.sqrt(this.x * this.x + this.y * this.y); }, subtract: function (v) { this.x -= v.x; this.y -= v.y; return this; }, set: function (x, y) { this.x = x; this.y = y; return this; } }; function Petal(stretchA, stretchB, startAngle, angle, growFactor, bloom) { this.stretchA = stretchA; this.stretchB = stretchB; this.startAngle = startAngle; this.angle = angle; this.bloom = bloom; this.growFactor = growFactor; this.r = 1; this.isfinished = false; //this.tanAngleA = Garden.random(-Garden.degrad(Garden.options.tanAngle), Garden.degrad(Garden.options.tanAngle)); //this.tanAngleB = Garden.random(-Garden.degrad(Garden.options.tanAngle), Garden.degrad(Garden.options.tanAngle)); } Petal.prototype = { draw: function () { var ctx = this.bloom.garden.ctx; var v1, v2, v3, v4; v1 = new Vector(0, this.r).rotate(Garden.degrad(this.startAngle)); v2 = v1.clone().rotate(Garden.degrad(this.angle)); v3 = v1.clone().mult(this.stretchA); //.rotate(this.tanAngleA); v4 = v2.clone().mult(this.stretchB); //.rotate(this.tanAngleB); ctx.strokeStyle = this.bloom.c; ctx.beginPath(); ctx.moveTo(v1.x, v1.y); ctx.bezierCurveTo(v3.x, v3.y, v4.x, v4.y, v2.x, v2.y); ctx.stroke(); }, render: function () { if (this.r]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2Fconfession%2Fjs%2Fjquery.js</url>
-    <content type="text"><![CDATA[(function(A,w){function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o]*$|^#([\w-]+)$/,Ua=/^.[^:#\[\.,]*$/,Va=/\S/, Wa=/^(\s|\u00A0)+|(\s|\u00A0)+$/g,Xa=/^(?:)?$/,P=navigator.userAgent,xa=false,Q=[],L,$=Object.prototype.toString,aa=Object.prototype.hasOwnProperty,ba=Array.prototype.push,R=Array.prototype.slice,ya=Array.prototype.indexOf;c.fn=c.prototype={init:function(a,b){var d,f;if(!a)return this;if(a.nodeType){this.context=this[0]=a;this.length=1;return this}if(a==="body"&&!b){this.context=s;this[0]=s.body;this.selector="body";this.length=1;return this}if(typeof a==="string")if((d=Ta.exec(a))&& (d[1]||!b))if(d[1]){f=b?b.ownerDocument||b:s;if(a=Xa.exec(a))if(c.isPlainObject(b)){a=[s.createElement(a[1])];c.fn.attr.call(a,b,true)}else a=[f.createElement(a[1])];else{a=sa([d[1]],[f]);a=(a.cacheable?a.fragment.cloneNode(true):a.fragment).childNodes}return c.merge(this,a)}else{if(b=s.getElementById(d[2])){if(b.id!==d[2])return T.find(a);this.length=1;this[0]=b}this.context=s;this.selector=a;return this}else if(!b&&/^\w+$/.test(a)){this.selector=a;this.context=s;a=s.getElementsByTagName(a);return c.merge(this, a)}else return!b||b.jquery?(b||T).find(a):c(b).find(a);else if(c.isFunction(a))return T.ready(a);if(a.selector!==w){this.selector=a.selector;this.context=a.context}return c.makeArray(a,this)},selector:"",jquery:"1.4.2",length:0,size:function(){return this.length},toArray:function(){return R.call(this,0)},get:function(a){return a==null?this.toArray():a=200&&a.status=0;a=e?a.responseXML:a.responseText;e&&a.documentElement.nodeName==="parsererror"&&c.error("parsererror");if(d&&d.dataFilter)a=d.dataFilter(a,b);if(typeof a==="string")if(b=== "json"||!b&&f.indexOf("json")>=0)a=c.parseJSON(a);else if(b==="script"||!b&&f.indexOf("javascript")>=0)c.globalEval(a);return a},param:function(a,b){function d(i,o){if(c.isArray(o))c.each(o,function(k,n){b||/\[\]$/.test(i)?f(i,n):d(i+"["+(typeof n==="object"||c.isArray(n)?k:"")+"]",n)});else!b&&o!=null&&typeof o==="object"?c.each(o,function(k,n){d(i+"["+k+"]",n)}):f(i,o)}function f(i,o){o=c.isFunction(o)?o():o;e[e.length]=encodeURIComponent(i)+"="+encodeURIComponent(o)}var e=[];if(b===w)b=c.ajaxSettings.traditional; if(c.isArray(a)||a.jquery)c.each(a,function(){f(this.name,this.value)});else for(var j in a)d(j,a[j]);return e.join("&").replace(yb,"+")}});var la={},Ab=/toggle|show|hide/,Bb=/^([+-]=)?([\d+-.]+)(.*)$/,W,va=[["height","marginTop","marginBottom","paddingTop","paddingBottom"],["width","marginLeft","marginRight","paddingLeft","paddingRight"],["opacity"]];c.fn.extend({show:function(a,b){if(a||a===0)return this.animate(K("show",3),a,b);else{a=0;for(b=this.length;a=this.options.duration+this.startTime){this.now= this.end;this.pos=this.state=1;this.update();this.options.curAnim[this.prop]=true;for(var f in this.options.curAnim)if(this.options.curAnim[f]!==true)d=false;if(d){if(this.options.display!=null){this.elem.style.overflow=this.options.overflow;a=c.data(this.elem,"olddisplay");this.elem.style.display=a?a:this.options.display;if(c.css(this.elem,"display")==="none")this.elem.style.display="block"}this.options.hide&&c(this.elem).hide();if(this.options.hide||this.options.show)for(var e in this.options.curAnim)c.style(this.elem, e,this.options.orig[e]);this.options.complete.call(this.elem)}return false}else{e=b-this.startTime;this.state=e/this.options.duration;a=this.options.easing||(c.easing.swing?"swing":"linear");this.pos=c.easing[this.options.specialEasing&&this.options.specialEasing[this.prop]||a](this.state,e,0,1,this.options.duration);this.now=this.start+(this.end-this.start)*this.pos;this.update()}return true}};c.extend(c.fx,{tick:function(){for(var a=c.timers,b=0;b"; a.insertBefore(b,a.firstChild);d=b.firstChild;f=d.firstChild;e=d.nextSibling.firstChild.firstChild;this.doesNotAddBorder=f.offsetTop!==5;this.doesAddBorderForTableAndCells=e.offsetTop===5;f.style.position="fixed";f.style.top="20px";this.supportsFixedPosition=f.offsetTop===20||f.offsetTop===15;f.style.position=f.style.top="";d.style.overflow="hidden";d.style.position="relative";this.subtractsBorderForOverflowNotVisible=f.offsetTop===-5;this.doesNotIncludeMarginInBodyOffset=a.offsetTop!==j;a.removeChild(b); c.offset.initialize=c.noop},bodyOffset:function(a){var b=a.offsetTop,d=a.offsetLeft;c.offset.initialize();if(c.offset.doesNotIncludeMarginInBodyOffset){b+=parseFloat(c.curCSS(a,"marginTop",true))||0;d+=parseFloat(c.curCSS(a,"marginLeft",true))||0}return{top:b,left:d}},setOffset:function(a,b,d){if(/static/.test(c.curCSS(a,"position")))a.style.position="relative";var f=c(a),e=f.offset(),j=parseInt(c.curCSS(a,"top",true),10)||0,i=parseInt(c.curCSS(a,"left",true),10)||0;if(c.isFunction(b))b=b.call(a, d,e);d={top:b.top-e.top+j,left:b.left-e.left+i};"using"in b?b.using.call(a,d):f.css(d)}};c.fn.extend({position:function(){if(!this[0])return null;var a=this[0],b=this.offsetParent(),d=this.offset(),f=/^body|html$/i.test(b[0].nodeName)?{top:0,left:0}:b.offset();d.top-=parseFloat(c.curCSS(a,"marginTop",true))||0;d.left-=parseFloat(c.curCSS(a,"marginLeft",true))||0;f.top+=parseFloat(c.curCSS(b[0],"borderTopWidth",true))||0;f.left+=parseFloat(c.curCSS(b[0],"borderLeftWidth",true))||0;return{top:d.top- f.top,left:d.left-f.left}},offsetParent:function(){return this.map(function(){for(var a=this.offsetParent||s.body;a&&!/^body|html$/i.test(a.nodeName)&&c.css(a,"position")==="static";)a=a.offsetParent;return a})}});c.each(["Left","Top"],function(a,b){var d="scroll"+b;c.fn[d]=function(f){var e=this[0],j;if(!e)return null;if(f!==w)return this.each(function(){if(j=wa(this))j.scrollTo(!a?f:c(j).scrollLeft(),a?f:c(j).scrollTop());else this[d]=f});else return(j=wa(e))?"pageXOffset"in j?j[a?"pageYOffset": "pageXOffset"]:c.support.boxModel&&j.document.documentElement[d]||j.document.body[d]:e[d]}});c.each(["Height","Width"],function(a,b){var d=b.toLowerCase();c.fn["inner"+b]=function(){return this[0]?c.css(this[0],d,false,"padding"):null};c.fn["outer"+b]=function(f){return this[0]?c.css(this[0],d,false,f?"margin":"border"):null};c.fn[d]=function(f){var e=this[0];if(!e)return f==null?null:this;if(c.isFunction(f))return this.each(function(j){var i=c(this);i[d](f.call(this,j,i[d]()))});return"scrollTo"in e&&e.document?e.document.compatMode==="CSS1Compat"&&e.document.documentElement["client"+b]||e.document.body["client"+b]:e.nodeType===9?Math.max(e.documentElement["client"+b],e.body["scroll"+b],e.documentElement["scroll"+b],e.body["offset"+b],e.documentElement["offset"+b]):f===w?c.css(e,d):this.css(d,typeof f==="string"?f:f+"px")}});A.jQuery=A.$=c})(window);]]></content>
   </entry>
 </search>
